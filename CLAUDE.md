@@ -35,6 +35,8 @@ validation/        External research validating the data model.
 
 Run `python build.py` after any card or ramp change — it fails non-zero on a broken intra-module edge, a card outside the 3–6 edge guardrail, or an unresolved ramp target.
 
+Always commit and push after completing even a minor task. Before committing, scan the changed documents for sensitive information about any individuals. If any exists, flag it and hold off. Otherwise, commit and push all uncommitted changes once the work has come to rest.
+
 ## Writing conventions
 
 - **Do not force-wrap markdown.** Write paragraphs as single continuous lines and let the editor soft-wrap. Do not insert hard line breaks to hit a column width.
