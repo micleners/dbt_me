@@ -28,8 +28,8 @@ validation/        External research validating the data model.
 ## Status
 
 - **Distress Tolerance** — complete: 13 cards (T1–T13), 49 edges, 11 ramps, passing `build.py`.
-- **Mindfulness, Emotion Regulation, Interpersonal Effectiveness** — not yet built. See `methodology/module_fetch.md`.
-- Known follow-up: add a `builds_on` relation (reverse of `prerequisite_of`) when building Mindfulness; it resolves the 5 cross-module edges Distress Tolerance already points at (`mindfulness/wise-mind`, `mindfulness/observing`).
+- **Mindfulness** — complete: 10 cards (M1–M10), 34 edges, 6 ramps, passing `build.py`. Added the `builds_on` relation to `SCHEMA.md`; the cross-module edges Distress Tolerance points at (`mindfulness/wise-mind`, `mindfulness/observing`) now resolve.
+- **Emotion Regulation, Interpersonal Effectiveness** — not yet built. See `methodology/module_fetch.md`.
 
 ## Workflow
 

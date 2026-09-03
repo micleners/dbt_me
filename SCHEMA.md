@@ -72,6 +72,7 @@ Entry ramps and hub cards are allowed to exceed this deliberately.
 | `escalates_to`    | when this isn't enough, go here (more intensive)                     |
 | `de_escalates_to` | the calmer / next-step move after this one                           |
 | `prerequisite_of` | you generally need the target skill first                            |
+| `builds_on`       | the target is foundational; this card extends or applies it (reverse of `prerequisite_of`) |
 | `part_of`         | this card is a component of the target (e.g. a letter of an acronym) |
 | `alternative_to`  | a sibling skill for the same situation                               |
 | `contrasts_with`  | deliberately different approach; compare / choose                    |

@@ -23,7 +23,7 @@ RAMPS_FILE = ROOT / "ramps.yaml"
 OUT_FILE = ROOT / "backlinks.json"
 
 # Modules we have not built yet — edges into them are expected, not errors.
-FUTURE_MODULES = {"mindfulness", "emotion-regulation", "interpersonal-effectiveness"}
+FUTURE_MODULES = {"emotion-regulation", "interpersonal-effectiveness"}
 
 
 def split_frontmatter(text):

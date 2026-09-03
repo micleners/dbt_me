@@ -122,3 +122,68 @@ ramps:
         note: Purpose and value-aligned action buffer against future distress.
       - to: distress-tolerance/recognize-emotional-crisis
         note: Learn your early-warning pattern so you can act sooner next time.
+
+  # ---------- MINDFULNESS ----------
+  - id: ramp/caught-in-thoughts
+    kind: felt-state
+    cue: "Caught in a churn of thoughts, believing them, can't get any distance."
+    edges:
+      - to: mindfulness/mental-noting
+        primary: true
+        note: Label each thought plainly so it stops sweeping you along.
+      - to: mindfulness/thought-defusion
+        note: If a thought won't loosen, use imagery to put space between you and it.
+
+  - id: ramp/self-critical
+    kind: felt-state
+    cue: "Harsh and judgmental toward myself or others, and it's souring my mood."
+    edges:
+      - to: mindfulness/mindfulness-of-negative-judgments
+        primary: true
+        note: First catch the automatic judgments and the feelings they produce.
+      - to: mindfulness/letting-go
+        note: Then rewrite them into non-judgmental observations to drain the charge.
+
+  - id: ramp/cant-name-feeling
+    kind: felt-state
+    cue: "Uneasy or overwhelmed but I can't tell what I'm actually feeling."
+    edges:
+      - to: mindfulness/describe-your-emotions
+        primary: true
+        note: Name it, rate it, and separate the emotion from the thoughts it drives.
+      - to: mindfulness/internal-vs-external-events
+        note: If you're tuned out of your inner world, rebalance toward internal awareness.
+
+  # ---------- SITUATIONS (mindfulness) ----------
+  - id: ramp/torn-decision
+    kind: situation
+    cue: "Facing a decision and torn between what I feel and what's logical."
+    edges:
+      - to: mindfulness/wise-mind
+        primary: true
+        note: Integrate emotion and fact instead of deciding from just one.
+
+  # ---------- GOALS (mindfulness) ----------
+  - id: ramp/build-mindfulness
+    kind: goal
+    cue: "I want to build a mindfulness practice from the ground up."
+    edges:
+      - to: mindfulness/observing
+        primary: true
+        note: Start with the foundational skill — observe one object, notice drift, return.
+      - to: mindfulness/mental-body-scan
+        note: Extend the same attention to the body to relax and reconnect.
+      - to: mindfulness/mindful-breathing
+        note: A portable anchor you can practice anywhere.
+
+  - id: ramp/calm-anxious-mind
+    kind: goal
+    cue: "I want to calm an anxious, racing mind."
+    edges:
+      - to: mindfulness/mindful-breathing
+        primary: true
+        note: Anchor on the breath to settle the nervous system.
+      - to: mindfulness/thought-defusion
+        note: If anxious thoughts keep gripping, create distance from them.
+      - to: mindfulness/mental-body-scan
+        note: Release the physical tension anxiety leaves in the body.
