@@ -2,6 +2,13 @@
 
 How the **Distress Tolerance** module was built, and a reusable prompt to build the remaining three the same way. Read `SCHEMA.md` first — this doc assumes the data model.
 
+## Progress
+
+- **Distress Tolerance** — complete (13 cards, T1–T13). The original build this doc is written from.
+- **Mindfulness** — complete (10 cards, M1–M10, 34 edges, 6 ramps). Added the `builds_on` relation to `SCHEMA.md` and resolved the cross-module edges Distress Tolerance pointed at (`mindfulness/wise-mind`, `mindfulness/observing`). Removed `mindfulness` from `build.py`'s `FUTURE_MODULES`.
+- **Emotion Regulation** — in progress. 12 cards (E1–E12). URL quirk: E1–E10 sit under `/emotional-regulation/`, but E11 STOP and E12 ABC PLEASE sit under `/emotion-regulation/` (no "-al"). Raw pages fetched to `raw/emotion-regulation/`; Opus card authoring not yet started.
+- **Interpersonal Effectiveness** — not yet built.
+
 ## The pipeline we used
 
 1. **Enumerate the deck.** Crawl the module's parent page on https://dialecticalbehaviortherapy.com to list every exercise (name + URL). Verify the count against a second source (the page DOM or a screenshot) — the fetcher's summarizer silently truncated lists, and the true count came from the DOM. Distress Tolerance = 13 cards (T1–T13), despite an initial guess of 18.

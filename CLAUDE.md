@@ -35,7 +35,9 @@ validation/        External research validating the data model.
 
 Run `python build.py` after any card or ramp change — it fails non-zero on a broken intra-module edge, a card outside the 3–6 edge guardrail, or an unresolved ramp target.
 
-Always commit and push after completing even a minor task. Before committing, scan the changed documents for sensitive information about any individuals. If any exists, flag it and hold off. Otherwise, commit and push all uncommitted changes once the work has come to rest.
+Always commit and push after completing even a minor task. A "stop here" checkpoint counts as the work coming to rest: whenever you pause, hand back, or are told to stop before the next phase, commit and push whatever is in the working tree first, including intermediate artifacts like a raw fetch cache or a progress note. Do not leave uncommitted changes sitting while you wait for the next instruction. The only reason to hold off is the sensitive-information check below.
+
+Before committing, scan the changed documents for sensitive information about any individuals. If any exists, flag it and hold off. Otherwise, commit and push all uncommitted changes once the work has come to rest.
 
 ## Writing conventions
 
