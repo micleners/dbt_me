@@ -1,0 +1,9 @@
+# Normalize line endings across machines: store as LF in the repo,
+# check out with the platform's native endings.
+* text=auto eol=lf
+
+# Explicit binary types (never normalized)
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
