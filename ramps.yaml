@@ -1,0 +1,124 @@
+# Entry ramps — how you actually arrive at the web.
+# Each ramp matches an opening ("what's going on") and points into the graph.
+# The crawler picks a ramp, then follows the cards' own typed edges from there.
+#
+# kind: felt-state | situation | goal
+# edges[].to is a card id; primary=true marks the first suggestion to surface.
+
+ramps:
+  # ---------- FELT STATES ----------
+  - id: ramp/panicking
+    kind: felt-state
+    cue: "Panicking — racing heart, flushed, physically activated, can't think."
+    edges:
+      - to: distress-tolerance/tipp
+        primary: true
+        note: Extreme bodily arousal calls for the fastest body-based down-regulation.
+      - to: distress-tolerance/grounding
+        note: If it's more spiral than alarm, reorient to the present instead.
+      - to: distress-tolerance/half-smile
+        note: A gentler body signal if TIPP is too much or unavailable.
+
+  - id: ramp/numb-empty
+    kind: felt-state
+    cue: "Numb, empty, flat, depressed, unmotivated."
+    edges:
+      - to: distress-tolerance/tipp
+        primary: true
+        note: Use the warmth/intense-exercise side of TIPP to lift a low state.
+      - to: distress-tolerance/self-soothing
+        note: Gentle sensory comfort to re-engage.
+      - to: distress-tolerance/actions-based-on-values
+        note: When steadier, small value-aligned action breaks the avoidance cycle.
+
+  - id: ramp/urge-to-act
+    kind: felt-state
+    cue: "Overwhelmed and about to act on an urge (lash out, binge, drink, self-harm, text someone)."
+    edges:
+      - to: distress-tolerance/urge-surfing
+        primary: true
+        note: Ride the urge out — it peaks and fades if you don't act.
+      - to: distress-tolerance/resistt
+        note: If staying with it is too much, manage the urge with the RESISTT menu.
+      - to: distress-tolerance/accepts
+        note: Or distract through the moment with ACCEPTS.
+
+  - id: ramp/resentful-stuck
+    kind: felt-state
+    cue: "Resentful, fighting reality, stuck on how unfair something is."
+    edges:
+      - to: distress-tolerance/radical-acceptance
+        primary: true
+        note: Stop paying the resistance tax on something already fixed.
+      - to: distress-tolerance/willingness-vs-willfulness
+        note: Notice the willful stance and shift to a willing one.
+
+  # ---------- SITUATIONS ----------
+  - id: ramp/interpersonal-conflict
+    kind: situation
+    cue: "In conflict with a person, about to say something I'll regret."
+    edges:
+      - to: distress-tolerance/recognize-emotional-crisis
+        primary: true
+        note: Gateway — confirm the warning signs, which then branch by what you're feeling.
+      - to: distress-tolerance/tipp
+        note: If your body is already in alarm, down-regulate before you speak.
+
+  - id: ramp/harmful-behavior-urge
+    kind: situation
+    cue: "Urge to do a specific harmful behavior (drink, binge, self-harm, contact an ex)."
+    edges:
+      - to: distress-tolerance/urge-surfing
+        primary: true
+        note: Sit with the wave instead of obeying it.
+      - to: distress-tolerance/cost-benefit-analysis
+        note: Later, when calm, weigh whether the behavior is worth changing at all.
+
+  - id: ramp/ruminating
+    kind: situation
+    cue: "Ruminating, pulled out of the present into past or future thoughts."
+    edges:
+      - to: distress-tolerance/grounding
+        primary: true
+        note: Return to the present through the senses.
+
+  # ---------- GOALS ----------
+  - id: ramp/get-through-moment
+    kind: goal
+    cue: "I just want to get through this moment without making it worse."
+    edges:
+      - to: distress-tolerance/accepts
+        primary: true
+        note: Pick one distraction category and survive the moment.
+      - to: distress-tolerance/tipp
+        note: If the body is in alarm, reset it fast.
+      - to: distress-tolerance/self-soothing
+        note: If you have a little space, comfort the senses.
+
+  - id: ramp/accept-unchangeable
+    kind: goal
+    cue: "I want to accept something I can't change."
+    edges:
+      - to: distress-tolerance/radical-acceptance
+        primary: true
+        note: The core acceptance skill.
+      - to: distress-tolerance/willingness-vs-willfulness
+        note: The stance that makes acceptance actionable.
+
+  - id: ramp/decide-habit-change
+    kind: goal
+    cue: "I want to decide whether to change a habit or behavior."
+    edges:
+      - to: distress-tolerance/cost-benefit-analysis
+        primary: true
+        note: Score the costs and benefits to build the motivation.
+
+  - id: ramp/fewer-crises
+    kind: goal
+    cue: "I want to build a life with fewer crises."
+    edges:
+      - to: distress-tolerance/actions-based-on-values
+        primary: true
+        note: Purpose and value-aligned action buffer against future distress.
+      - to: distress-tolerance/recognize-emotional-crisis
+        note: Learn your early-warning pattern so you can act sooner next time.

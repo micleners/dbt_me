@@ -1,0 +1,248 @@
+{
+  "distress-tolerance/actions-based-on-values": [
+    {
+      "from": "distress-tolerance/cost-benefit-analysis",
+      "relation": "pairs_with",
+      "note": "Values clarify which alternative behavior is worth the cost of change."
+    },
+    {
+      "from": "distress-tolerance/radical-acceptance",
+      "relation": "de_escalates_to",
+      "note": "Once you accept what you can't change, channel the freed energy into a value-based proactive plan."
+    },
+    {
+      "from": "distress-tolerance/tipp",
+      "relation": "de_escalates_to",
+      "note": "Once the body is calmer, re-engage with what matters instead of the urge."
+    },
+    {
+      "from": "distress-tolerance/willingness-vs-willfulness",
+      "relation": "de_escalates_to",
+      "note": "Willingness opens you to effective action; your values point to which action."
+    }
+  ],
+  "distress-tolerance/half-smile": [
+    {
+      "from": "distress-tolerance/radical-acceptance",
+      "relation": "pairs_with",
+      "note": "Half Smile is the body-based way to practice non-resistance while you accept."
+    },
+    {
+      "from": "distress-tolerance/tipp",
+      "relation": "alternative_to",
+      "note": "A gentler body-based option when full TIPP is too much or unavailable."
+    },
+    {
+      "from": "distress-tolerance/urge-surfing",
+      "relation": "pairs_with",
+      "note": "Soften the body with a half smile while you ride the wave."
+    }
+  ],
+  "distress-tolerance/urge-surfing": [
+    {
+      "from": "distress-tolerance/accepts",
+      "relation": "contrasts_with",
+      "note": "ACCEPTS distracts away from the wave; urge surfing rides it \u2014 opposite mechanisms for the same urge."
+    },
+    {
+      "from": "distress-tolerance/cost-benefit-analysis",
+      "relation": "pairs_with",
+      "note": "This decides a behavior is not worth it; urge surfing is how you ride out the urge without acting on it."
+    },
+    {
+      "from": "distress-tolerance/distracting-activities",
+      "relation": "contrasts_with",
+      "note": "Distraction moves attention away from the urge; urge surfing stays with it \u2014 opposite strategies for the same urge."
+    },
+    {
+      "from": "distress-tolerance/half-smile",
+      "relation": "pairs_with",
+      "note": "Soften the body with a half smile while you ride out an urge."
+    },
+    {
+      "from": "distress-tolerance/resistt",
+      "relation": "contrasts_with",
+      "note": "RESISTT manages the urge by shifting away from it; urge surfing sits with it \u2014 opposite mechanisms."
+    }
+  ],
+  "distress-tolerance/resistt": [
+    {
+      "from": "distress-tolerance/accepts",
+      "relation": "alternative_to",
+      "note": "Both are multi-tool distraction toolkits for surviving the moment \u2014 pick one per situation."
+    },
+    {
+      "from": "distress-tolerance/distracting-activities",
+      "relation": "part_of",
+      "note": "This prepared list is the raw material for RESISTT's \"Engage in a distracting activity\" step."
+    },
+    {
+      "from": "distress-tolerance/self-soothing",
+      "relation": "pairs_with",
+      "note": "When very activated, use active distraction (RESISTT) first, then self-soothe as intensity drops."
+    }
+  ],
+  "distress-tolerance/tipp": [
+    {
+      "from": "distress-tolerance/actions-based-on-values",
+      "relation": "contrasts_with",
+      "note": "TIPP is a momentary rescue; values-based action is the long game that reduces how often crises arise."
+    },
+    {
+      "from": "distress-tolerance/cost-benefit-analysis",
+      "relation": "contrasts_with",
+      "note": "TIPP is fast and in-the-moment; this is slow and deliberative \u2014 choose by whether you are calm enough to think."
+    },
+    {
+      "from": "distress-tolerance/grounding",
+      "relation": "alternative_to",
+      "note": "Grounding reorients attention without the physiological jolt of TIPP \u2014 a gentler route when the body isn't in full alarm."
+    },
+    {
+      "from": "distress-tolerance/recognize-emotional-crisis",
+      "relation": "if_condition",
+      "note": "Acute bodily arousal is the signal for the fastest body-based down-regulation."
+    },
+    {
+      "from": "distress-tolerance/self-soothing",
+      "relation": "contrasts_with",
+      "note": "TIPP jolts the body to down-regulate fast; self-soothing gently comforts \u2014 choose by how intense the arousal is."
+    },
+    {
+      "from": "distress-tolerance/urge-surfing",
+      "relation": "pairs_with",
+      "note": "A cold-temperature jolt (TIPP's ice cube) can steady you while you surf a strong urge."
+    }
+  ],
+  "distress-tolerance/cost-benefit-analysis": [
+    {
+      "from": "distress-tolerance/recognize-emotional-crisis",
+      "relation": "pairs_with",
+      "note": "Later, when calm, analyze whether the crisis behavior you spotted here is worth changing."
+    },
+    {
+      "from": "distress-tolerance/tipp",
+      "relation": "pairs_with",
+      "note": "After the crisis passes, if it was driven by a recurring behavior, analyze it while calm to prevent the next one."
+    }
+  ],
+  "distress-tolerance/self-soothing": [
+    {
+      "from": "distress-tolerance/distracting-activities",
+      "relation": "alternative_to",
+      "note": "Both are gentle activity-based ways through distress; self-soothing targets the senses to calm, distraction shifts focus."
+    },
+    {
+      "from": "distress-tolerance/grounding",
+      "relation": "alternative_to",
+      "note": "Both calm through the senses \u2014 grounding reorients to present reality, self-soothing adds pleasant sensory comfort."
+    }
+  ],
+  "distress-tolerance/radical-acceptance": [
+    {
+      "from": "distress-tolerance/accepts",
+      "relation": "de_escalates_to",
+      "note": "Use ACCEPTS until intensity decreases, then shift to Radical Acceptance."
+    },
+    {
+      "from": "distress-tolerance/actions-based-on-values",
+      "relation": "pairs_with",
+      "note": "Accept what you can't change, then invest the freed energy in what you value."
+    },
+    {
+      "from": "distress-tolerance/half-smile",
+      "relation": "de_escalates_to",
+      "note": "The body-calm of a half smile opens the door to accepting what you can't change."
+    },
+    {
+      "from": "distress-tolerance/resistt",
+      "relation": "de_escalates_to",
+      "note": "Once the urge is handled, move from surviving toward accepting what you cannot change."
+    },
+    {
+      "from": "distress-tolerance/willingness-vs-willfulness",
+      "relation": "pairs_with",
+      "note": "You radically accept the facts first; willingness is the flexible stance you then take toward them."
+    }
+  ],
+  "distress-tolerance/recognize-emotional-crisis": [
+    {
+      "from": "distress-tolerance/cost-benefit-analysis",
+      "relation": "pairs_with",
+      "note": "Feed the crisis behaviors you identified there in as the behavior to analyze here."
+    }
+  ],
+  "distress-tolerance/willingness-vs-willfulness": [
+    {
+      "from": "distress-tolerance/actions-based-on-values",
+      "relation": "pairs_with",
+      "note": "Willingness is the open stance; your values supply the direction to act in."
+    },
+    {
+      "from": "distress-tolerance/radical-acceptance",
+      "relation": "prerequisite_of",
+      "note": "You must accept the facts before you can willingly, flexibly work with them."
+    }
+  ],
+  "distress-tolerance/accepts": [
+    {
+      "from": "distress-tolerance/distracting-activities",
+      "relation": "pairs_with",
+      "note": "ACCEPTS's \"Activities\" category draws on the same prepared list."
+    },
+    {
+      "from": "distress-tolerance/resistt",
+      "relation": "alternative_to",
+      "note": "Both are multi-tool distraction toolkits for surviving the moment \u2014 learn both, choose one per situation."
+    },
+    {
+      "from": "distress-tolerance/tipp",
+      "relation": "alternative_to",
+      "note": "ACCEPTS resets the mind by distraction where TIPP resets the body \u2014 choose by whether the crisis feels somatic or cognitive."
+    },
+    {
+      "from": "distress-tolerance/urge-surfing",
+      "relation": "de_escalates_to",
+      "note": "After surfing the peak, distraction (ACCEPTS) can carry you the rest of the way down."
+    }
+  ],
+  "distress-tolerance/grounding": [
+    {
+      "from": "distress-tolerance/half-smile",
+      "relation": "alternative_to",
+      "note": "Both are quiet, low-effort, present-moment ways to settle without physiological intervention."
+    },
+    {
+      "from": "distress-tolerance/recognize-emotional-crisis",
+      "relation": "if_condition",
+      "note": "Cognitive spiral (not bodily arousal) calls for reorienting to the present."
+    },
+    {
+      "from": "distress-tolerance/self-soothing",
+      "relation": "alternative_to",
+      "note": "Both work through the senses \u2014 grounding reorients to the present, self-soothing adds comforting sensory input."
+    }
+  ],
+  "distress-tolerance/distracting-activities": [
+    {
+      "from": "distress-tolerance/grounding",
+      "relation": "contrasts_with",
+      "note": "Grounding turns attention toward present sensory reality; distraction turns it away toward an activity."
+    },
+    {
+      "from": "distress-tolerance/recognize-emotional-crisis",
+      "relation": "if_condition",
+      "note": "When the warning sign is an urge to act, buy time by distracting away from it."
+    },
+    {
+      "from": "distress-tolerance/resistt",
+      "relation": "pairs_with",
+      "note": "The \"Engage in a distracting activity\" step draws directly on your prepared distraction list."
+    },
+    {
+      "from": "distress-tolerance/self-soothing",
+      "relation": "alternative_to",
+      "note": "Both are gentle activity-based routes through distress; soothing calms via the senses, distraction shifts focus."
+    }
+  ]
+}
