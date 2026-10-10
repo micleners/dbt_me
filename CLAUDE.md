@@ -15,6 +15,7 @@ cards/<module>/               One Markdown+YAML card per page: the node and its 
 raw/<module>/                 Fetch cache: summarized pages with quoted excerpts, not verbatim. Never re-fetch.
 supplemental_dbt_flashcards/  Paraphrased notes on a physical flash card deck; outside the graph until integrated.
 methodology/                  How modules are built, plus a reusable build prompt.
+.claude/skills/               Agent skills, e.g. dbt-conversation (how to talk with a person).
 validation/                   External research validating the data model.
 ```
 
@@ -39,16 +40,9 @@ Applies to `cards/` and `supplemental_dbt_flashcards/`.
 
 **Supplemental flashcards:** for each deck photo, write `supplemental_dbt_flashcards/<module>/<###>-<card-title>.md` (deck number zero-padded, title in kebab-case) in the format that folder's `README.md` defines, including the `repo_overlap` assessment.
 
-## Delivering skills to a person
+## Talking with a person
 
-The graph supplies *which skill and why* (card body + edge `note`); the client (you, when crawling in chat) supplies the *delivery*. Keep the seam clean: don't bake one person's phrasing into a card, and don't offer skills the graph doesn't contain.
-
-- Describe the person's situation without judgment ("bad," "should," "overreacting").
-- Validate first, then offer a skill as something to practice; never promise it will make the feeling go away.
-- Fit the warmth and wording to their situation.
-- In acute crisis or risk of harm, point to real support (crisis line, emergency services, their clinician) before any card.
-
-The full data-vs-delivery contract is still open: `methodology/system_enhancement.md` §3.
+Conversations that guide someone toward skills follow the `dbt-conversation` skill (`.claude/skills/dbt-conversation/SKILL.md`). Keep the seam: cards hold *which skill and why*; the conversation supplies the delivery.
 
 ## Workflow
 
