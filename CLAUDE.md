@@ -44,6 +44,19 @@ Applies to `cards/` and `supplemental_dbt_flashcards/`.
 
 Conversations that guide someone toward skills follow the `dbt-conversation` skill (`.claude/skills/dbt-conversation/SKILL.md`). Keep the seam: cards hold *which skill and why*; the conversation supplies the delivery.
 
+## Instruction hygiene
+
+Applies to agent-facing files: `CLAUDE.md`, `.claude/skills/`, `methodology/`.
+
+- Write imperative, checkable bullets under headings. No prose paragraphs or run-on sentences.
+- Include only what an agent would get wrong without it. Cut generic advice and anything inferable from the repo.
+- No history logs, backstory, or meta commentary. History lives in git; open decisions in `methodology/system_enhancement.md`.
+- No embellishment. Reserve emphasis (IMPORTANT, bold) for rules that are ignored without it.
+- Give each fact one home and point to it; don't restate it across files.
+- Put situational procedures in a skill, not here: `CLAUDE.md` loads every session. Keep `CLAUDE.md` under ~200 lines and each `SKILL.md` under ~500; split overflow into reference files.
+- Skill `description`s state what the skill does and when to use it.
+- When editing these files, prune stale or conflicting lines in the same change.
+
 ## Workflow
 
 - Run `python build.py` after any card or ramp change. It fails on a broken intra-module edge, a card outside 3–6 edges, or an unresolved ramp target.
