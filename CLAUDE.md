@@ -1,44 +1,57 @@
 # CLAUDE.md
 
-Project conventions and orientation for the DBT Skills Web app.
+A traversable graph of DBT (Dialectical Behavior Therapy) skill cards: crawl from a felt state, situation, or goal to a concrete skill. Chat is the crawler today; a web app comes later. The structured data is the product; clients are interchangeable renderers on top of it.
 
-## What this is
-
-A traversable graph of DBT (Dialectical Behavior Therapy) skill "cards" that you crawl from a felt state, situation, or goal toward a concrete skill suggestion. The chat interface is the crawler today; a web app over the same structured data comes later. The structured data is the product — clients (chat, web, an LLM) are interchangeable renderers on top of it.
-
-## Grounding
-
-DBT is Marsha Linehan's framework, organized into four skills modules: **Mindfulness**, **Distress Tolerance**, **Emotion Regulation**, **Interpersonal Effectiveness**. Card content is sourced from https://dialecticalbehaviortherapy.com and paraphrased into cards — that website *is* the card deck for this project. One page = one card = one node.
+DBT is Marsha Linehan's framework, with four modules: **Mindfulness**, **Distress Tolerance**, **Emotion Regulation**, **Interpersonal Effectiveness**. Cards paraphrase https://dialecticalbehaviortherapy.com: one page = one card = one node.
 
 ## Structure
 
 ```
-SCHEMA.md          Data model: nodes (cards), typed edges, ramps, guardrails. Read this first.
-build.py           No-dependency build step: validates the graph, generates backlinks.json.
-ramps.yaml         Entry ramps (felt-state / situation / goal) that point into the graph.
-backlinks.json     Generated reverse index. Never hand-edited.
-cards/<module>/    One Markdown+YAML file per card (node + its outgoing edges).
-raw/<module>/      Summarized page dumps with quoted excerpts (not verbatim; permanent fetch cache; never re-fetched).
-methodology/       How a module was built + a reusable prompt to build the rest.
-validation/        External research validating the data model.
+SCHEMA.md                     Data model: cards, typed edges, ramps, guardrails. Read first.
+build.py                      Validates the graph; generates backlinks.json.
+ramps.yaml                    Entry ramps (felt-state / situation / goal) into the graph.
+backlinks.json                Generated reverse index. Never hand-edit.
+cards/<module>/               One Markdown+YAML card per page: the node and its outgoing edges.
+raw/<module>/                 Fetch cache: summarized pages with quoted excerpts, not verbatim. Never re-fetch.
+supplemental_dbt_flashcards/  Paraphrased notes on a physical flash card deck; outside the graph until integrated.
+methodology/                  How modules are built, plus a reusable build prompt.
+validation/                   External research validating the data model.
 ```
-
-**Data vs. delivery.** The graph supplies *which skill and why* (card body + each edge's `note`). The client supplies the empathic, situation-specific *delivery*. Keep that seam clean: don't bake one person's phrasing into a card, and don't let a client invent skills the graph doesn't contain.
 
 ## Status
 
-- **Distress Tolerance** — complete: 13 cards (T1–T13), 49 edges, 11 ramps, passing `build.py`.
-- **Mindfulness** — complete: 10 cards (M1–M10), 34 edges, 6 ramps, passing `build.py`. Added the `builds_on` relation to `SCHEMA.md`; the cross-module edges Distress Tolerance points at (`mindfulness/wise-mind`, `mindfulness/observing`) now resolve.
-- **Emotion Regulation, Interpersonal Effectiveness** — not yet built. See `methodology/module_fetch.md`.
+- **Distress Tolerance:** 13 cards (T1–T13), 49 edges, 11 ramps.
+- **Mindfulness:** 10 cards (M1–M10), 34 edges, 6 ramps.
+- **Emotion Regulation** (E1–E12), **Interpersonal Effectiveness** (I1–I13): raw pages cached, cards not built. See `methodology/module_fetch.md`.
+- **Supplemental deck:** in progress, one file per card as photos arrive.
+
+## Writing card content
+
+Applies to `cards/` and `supplemental_dbt_flashcards/`.
+
+- Stay faithful: keep every step, its order, and any durations; add no steps, benefits, or claims the source doesn't make.
+- Paraphrase; don't reuse the source's sentences. Keep fixed names as-is: exercise names, example mantras, acronym letters.
+- Use Linehan's terms exactly (wise mind, radical acceptance, willingness, TIPP).
+- Keep steps exactly as concrete as the source: no vaguer, no more specific.
+- Write in a neutral reference register: describe the skill, don't comfort or persuade.
+- Our additions (DBT knowledge, overlap, integration ideas) go in edge `note`s or a `## Notes` section, never in the paraphrase.
+- Don't force-wrap markdown: one line per paragraph.
+
+**Supplemental flashcards:** for each deck photo, write `supplemental_dbt_flashcards/<module>/<###>-<card-title>.md` (deck number zero-padded, title in kebab-case) in the format that folder's `README.md` defines, including the `repo_overlap` assessment.
+
+## Delivering skills to a person
+
+The graph supplies *which skill and why* (card body + edge `note`); the client (you, when crawling in chat) supplies the *delivery*. Keep the seam clean: don't bake one person's phrasing into a card, and don't offer skills the graph doesn't contain.
+
+- Describe the person's situation without judgment ("bad," "should," "overreacting").
+- Validate first, then offer a skill as something to practice; never promise it will make the feeling go away.
+- Fit the warmth and wording to their situation.
+- In acute crisis or risk of harm, point to real support (crisis line, emergency services, their clinician) before any card.
+
+The full data-vs-delivery contract is still open: `methodology/system_enhancement.md` §3.
 
 ## Workflow
 
-Run `python build.py` after any card or ramp change — it fails non-zero on a broken intra-module edge, a card outside the 3–6 edge guardrail, or an unresolved ramp target.
-
-Always commit and push after completing even a minor task. A "stop here" checkpoint counts as the work coming to rest: whenever you pause, hand back, or are told to stop before the next phase, commit and push whatever is in the working tree first, including intermediate artifacts like a raw fetch cache or a progress note. Do not leave uncommitted changes sitting while you wait for the next instruction. The only reason to hold off is the sensitive-information check below.
-
-Before committing, scan the changed documents for sensitive information about any individuals. If any exists, flag it and hold off. Otherwise, commit and push all uncommitted changes once the work has come to rest.
-
-## Writing conventions
-
-- **Do not force-wrap markdown.** Write paragraphs as single continuous lines and let the editor soft-wrap. Do not insert hard line breaks to hit a column width.
+- Run `python build.py` after any card or ramp change. It fails on a broken intra-module edge, a card outside 3–6 edges, or an unresolved ramp target.
+- Commit and push whenever work comes to rest, including pauses, hand-backs, and "stop here" checkpoints. Include intermediate artifacts (raw caches, progress notes). Never leave changes uncommitted while waiting.
+- Before committing, scan the changes for sensitive information about individuals. If any exists, flag it and hold off.

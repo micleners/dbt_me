@@ -18,9 +18,9 @@ Loving-kindness comes from the Buddhist practice of metta: deliberately directin
 
 ## Practice
 
-1. Sit with your hands resting open in your lap or on your chest. Bring to mind someone it's easy to love, such as a close friend or a pet, and let yourself feel that warmth.
+1. Sit with your hands resting open in your lap or over your heart. Bring to mind someone it's easy to love, such as a close friend or a pet, and let yourself feel that warmth.
 2. Silently repeat a short wish for them, e.g. "May you be happy, may you be safe."
-3. After a few minutes, turn the wishes toward yourself. If that's difficult, picture yourself as a child, or use gentler phrases about learning self-kindness and meeting hard things gracefully.
+3. After a few minutes, turn the wishes toward yourself. If that's difficult, picture yourself as a child, or use other phrases, e.g. "May I learn to be kind to myself, may I accept challenges with grace."
 
 ## Notes
 

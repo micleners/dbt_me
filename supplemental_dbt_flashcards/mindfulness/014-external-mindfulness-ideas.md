@@ -14,7 +14,7 @@ repo_overlap:
 
 ## Summary
 
-Apply Observing (deck card 2) and Describing (deck card 3) to the world outside you rather than to your inner experience. Attending to outside sensations builds mindfulness and steadies you under stress, and it's especially useful when inner sensations are too intense to sit with, or when you can't access them at all.
+Apply Observing (deck card 2) and Describing (deck card 3) to the world outside you rather than to your inner experience. Attending to outside sensations can strengthen mindfulness and help you feel grounded in stressful moments, especially when inner sensations are too intense to sit with, or when you can't access them at all.
 
 ## Practice
 
