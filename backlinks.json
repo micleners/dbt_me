@@ -1,184 +1,4 @@
 {
-  "mindfulness/observing": [
-    {
-      "from": "distress-tolerance/grounding",
-      "relation": "pairs_with",
-      "note": "Grounding is applied Observing; practicing Observing when calm makes it easier to notice when you need to ground."
-    },
-    {
-      "from": "mindfulness/internal-vs-external-events",
-      "relation": "builds_on",
-      "note": "Applies the observing stance to two arenas at once \u2014 inner experience and the outer environment."
-    },
-    {
-      "from": "mindfulness/letting-go",
-      "relation": "pairs_with",
-      "note": "Rewrite judgments as if observing the situation from outside \u2014 the objective stance from Observing."
-    },
-    {
-      "from": "mindfulness/mental-body-scan",
-      "relation": "builds_on",
-      "note": "The body scan extends single-object observing to sensations across the whole body."
-    },
-    {
-      "from": "mindfulness/mental-noting",
-      "relation": "builds_on",
-      "note": "Turns the observing stance inward, onto the passing stream of thoughts and feelings."
-    },
-    {
-      "from": "mindfulness/mindful-breathing",
-      "relation": "builds_on",
-      "note": "Observing applied to the breath \u2014 a single, always-available object of attention."
-    }
-  ],
-  "distress-tolerance/resistt": [
-    {
-      "from": "distress-tolerance/accepts",
-      "relation": "alternative_to",
-      "note": "Both are multi-tool distraction toolkits for surviving the moment \u2014 pick one per situation."
-    },
-    {
-      "from": "distress-tolerance/distracting-activities",
-      "relation": "part_of",
-      "note": "This prepared list is the raw material for RESISTT's \"Engage in a distracting activity\" step."
-    },
-    {
-      "from": "distress-tolerance/self-soothing",
-      "relation": "pairs_with",
-      "note": "When very activated, use active distraction (RESISTT) first, then self-soothe as intensity drops."
-    }
-  ],
-  "distress-tolerance/recognize-emotional-crisis": [
-    {
-      "from": "distress-tolerance/cost-benefit-analysis",
-      "relation": "pairs_with",
-      "note": "Feed the crisis behaviors you identified there in as the behavior to analyze here."
-    }
-  ],
-  "mindfulness/mindful-breathing": [
-    {
-      "from": "mindfulness/mental-body-scan",
-      "relation": "pairs_with",
-      "note": "Both relax through the body; the scan opens with settling breaths and shares the same calming aim."
-    },
-    {
-      "from": "mindfulness/observing",
-      "relation": "pairs_with",
-      "note": "The breath is a portable object of observation \u2014 use it when no object is at hand."
-    },
-    {
-      "from": "mindfulness/thought-defusion",
-      "relation": "pairs_with",
-      "note": "Steady breathing is the ground from which you watch thoughts pass instead of chasing them."
-    },
-    {
-      "from": "mindfulness/wise-mind",
-      "relation": "builds_on",
-      "note": "Opens with the settling abdominal breath from Mindful Breathing before examining the problem."
-    }
-  ],
-  "mindfulness/thought-defusion": [
-    {
-      "from": "mindfulness/letting-go",
-      "relation": "alternative_to",
-      "note": "Another way to loosen a sticky judgment \u2014 defusion drifts it away, Letting Go rewrites it."
-    },
-    {
-      "from": "mindfulness/mental-noting",
-      "relation": "prerequisite_of",
-      "note": "Noting a thought as a thought is the base Thought Defusion extends into actively creating distance from it."
-    },
-    {
-      "from": "mindfulness/mindful-breathing",
-      "relation": "pairs_with",
-      "note": "Steady breathing is the ground from which you watch and release thoughts."
-    }
-  ],
-  "mindfulness/describe-your-emotions": [
-    {
-      "from": "mindfulness/internal-vs-external-events",
-      "relation": "pairs_with",
-      "note": "Once you notice internal events, describing your emotions names the strongest of them."
-    },
-    {
-      "from": "mindfulness/mental-noting",
-      "relation": "pairs_with",
-      "note": "Noting surfaces emotions in passing; Describe Your Emotions examines one of them in depth."
-    },
-    {
-      "from": "mindfulness/mindfulness-of-negative-judgments",
-      "relation": "pairs_with",
-      "note": "Tracks the emotion each judgment produces \u2014 the same emotion-clarity skill from M4."
-    },
-    {
-      "from": "mindfulness/wise-mind",
-      "relation": "builds_on",
-      "note": "Uses emotion-naming as its emotion-mind input, then weighs it against the facts."
-    }
-  ],
-  "distress-tolerance/cost-benefit-analysis": [
-    {
-      "from": "distress-tolerance/recognize-emotional-crisis",
-      "relation": "pairs_with",
-      "note": "Later, when calm, analyze whether the crisis behavior you spotted here is worth changing."
-    },
-    {
-      "from": "distress-tolerance/tipp",
-      "relation": "pairs_with",
-      "note": "After the crisis passes, if it was driven by a recurring behavior, analyze it while calm to prevent the next one."
-    }
-  ],
-  "mindfulness/mental-noting": [
-    {
-      "from": "mindfulness/describe-your-emotions",
-      "relation": "pairs_with",
-      "note": "Mental noting labels emotions in passing; describing goes deep into one emotion's action and thoughts."
-    },
-    {
-      "from": "mindfulness/letting-go",
-      "relation": "pairs_with",
-      "note": "The rewrite uses mental noting's \"I am thinking/feeling...\" phrasing to strip judgment from a thought."
-    },
-    {
-      "from": "mindfulness/mindfulness-of-negative-judgments",
-      "relation": "builds_on",
-      "note": "A targeted form of mental noting aimed specifically at judgment thoughts."
-    },
-    {
-      "from": "mindfulness/observing",
-      "relation": "contrasts_with",
-      "note": "Observing anchors on one external object; mental noting tracks the moving stream of thoughts instead."
-    },
-    {
-      "from": "mindfulness/thought-defusion",
-      "relation": "builds_on",
-      "note": "Extends mental noting \u2014 after noting a thought, imagery lets it drift away, loosening its hold."
-    }
-  ],
-  "distress-tolerance/willingness-vs-willfulness": [
-    {
-      "from": "distress-tolerance/actions-based-on-values",
-      "relation": "pairs_with",
-      "note": "Willingness is the open stance; your values supply the direction to act in."
-    },
-    {
-      "from": "distress-tolerance/radical-acceptance",
-      "relation": "prerequisite_of",
-      "note": "You must accept the facts before you can willingly, flexibly work with them."
-    }
-  ],
-  "distress-tolerance/self-soothing": [
-    {
-      "from": "distress-tolerance/distracting-activities",
-      "relation": "alternative_to",
-      "note": "Both are gentle activity-based ways through distress; self-soothing targets the senses to calm, distraction shifts focus."
-    },
-    {
-      "from": "distress-tolerance/grounding",
-      "relation": "alternative_to",
-      "note": "Both calm through the senses \u2014 grounding reorients to present reality, self-soothing adds pleasant sensory comfort."
-    }
-  ],
   "distress-tolerance/accepts": [
     {
       "from": "distress-tolerance/distracting-activities",
@@ -199,6 +19,159 @@
       "from": "distress-tolerance/urge-surfing",
       "relation": "de_escalates_to",
       "note": "After surfing the peak, distraction (ACCEPTS) can carry you the rest of the way down."
+    }
+  ],
+  "distress-tolerance/actions-based-on-values": [
+    {
+      "from": "distress-tolerance/cost-benefit-analysis",
+      "relation": "pairs_with",
+      "note": "Values clarify which alternative behavior is worth the cost of change."
+    },
+    {
+      "from": "distress-tolerance/radical-acceptance",
+      "relation": "de_escalates_to",
+      "note": "Once you accept what you can't change, channel the freed energy into a value-based proactive plan."
+    },
+    {
+      "from": "distress-tolerance/tipp",
+      "relation": "de_escalates_to",
+      "note": "Once the body is calmer, re-engage with what matters instead of the urge."
+    },
+    {
+      "from": "distress-tolerance/willingness-vs-willfulness",
+      "relation": "de_escalates_to",
+      "note": "Willingness opens you to effective action; your values point to which action."
+    }
+  ],
+  "distress-tolerance/cost-benefit-analysis": [
+    {
+      "from": "distress-tolerance/recognize-emotional-crisis",
+      "relation": "pairs_with",
+      "note": "Later, when calm, analyze whether the crisis behavior you spotted here is worth changing."
+    },
+    {
+      "from": "distress-tolerance/tipp",
+      "relation": "pairs_with",
+      "note": "After the crisis passes, if it was driven by a recurring behavior, analyze it while calm to prevent the next one."
+    }
+  ],
+  "distress-tolerance/distracting-activities": [
+    {
+      "from": "distress-tolerance/grounding",
+      "relation": "contrasts_with",
+      "note": "Grounding turns attention toward present sensory reality; distraction turns it away toward an activity."
+    },
+    {
+      "from": "distress-tolerance/recognize-emotional-crisis",
+      "relation": "if_condition",
+      "note": "When the warning sign is an urge to act, buy time by distracting away from it."
+    },
+    {
+      "from": "distress-tolerance/resistt",
+      "relation": "pairs_with",
+      "note": "The \"Engage in a distracting activity\" step draws directly on your prepared distraction list."
+    },
+    {
+      "from": "distress-tolerance/self-soothing",
+      "relation": "alternative_to",
+      "note": "Both are gentle activity-based routes through distress; soothing calms via the senses, distraction shifts focus."
+    }
+  ],
+  "distress-tolerance/grounding": [
+    {
+      "from": "distress-tolerance/half-smile",
+      "relation": "alternative_to",
+      "note": "Both are quiet, low-effort, present-moment ways to settle without physiological intervention."
+    },
+    {
+      "from": "distress-tolerance/recognize-emotional-crisis",
+      "relation": "if_condition",
+      "note": "Cognitive spiral (not bodily arousal) calls for reorienting to the present."
+    },
+    {
+      "from": "distress-tolerance/self-soothing",
+      "relation": "alternative_to",
+      "note": "Both work through the senses \u2014 grounding reorients to the present, self-soothing adds comforting sensory input."
+    }
+  ],
+  "distress-tolerance/half-smile": [
+    {
+      "from": "distress-tolerance/radical-acceptance",
+      "relation": "pairs_with",
+      "note": "Half Smile is the body-based way to practice non-resistance while you accept."
+    },
+    {
+      "from": "distress-tolerance/tipp",
+      "relation": "alternative_to",
+      "note": "A gentler body-based option when full TIPP is too much or unavailable."
+    },
+    {
+      "from": "distress-tolerance/urge-surfing",
+      "relation": "pairs_with",
+      "note": "Soften the body with a half smile while you ride the wave."
+    }
+  ],
+  "distress-tolerance/radical-acceptance": [
+    {
+      "from": "distress-tolerance/accepts",
+      "relation": "de_escalates_to",
+      "note": "Use ACCEPTS until intensity decreases, then shift to Radical Acceptance."
+    },
+    {
+      "from": "distress-tolerance/actions-based-on-values",
+      "relation": "pairs_with",
+      "note": "Accept what you can't change, then invest the freed energy in what you value."
+    },
+    {
+      "from": "distress-tolerance/half-smile",
+      "relation": "de_escalates_to",
+      "note": "The body-calm of a half smile opens the door to accepting what you can't change."
+    },
+    {
+      "from": "distress-tolerance/resistt",
+      "relation": "de_escalates_to",
+      "note": "Once the urge is handled, move from surviving toward accepting what you cannot change."
+    },
+    {
+      "from": "distress-tolerance/willingness-vs-willfulness",
+      "relation": "pairs_with",
+      "note": "You radically accept the facts first; willingness is the flexible stance you then take toward them."
+    }
+  ],
+  "distress-tolerance/recognize-emotional-crisis": [
+    {
+      "from": "distress-tolerance/cost-benefit-analysis",
+      "relation": "pairs_with",
+      "note": "Feed the crisis behaviors you identified there in as the behavior to analyze here."
+    }
+  ],
+  "distress-tolerance/resistt": [
+    {
+      "from": "distress-tolerance/accepts",
+      "relation": "alternative_to",
+      "note": "Both are multi-tool distraction toolkits for surviving the moment \u2014 pick one per situation."
+    },
+    {
+      "from": "distress-tolerance/distracting-activities",
+      "relation": "part_of",
+      "note": "This prepared list is the raw material for RESISTT's \"Engage in a distracting activity\" step."
+    },
+    {
+      "from": "distress-tolerance/self-soothing",
+      "relation": "pairs_with",
+      "note": "When very activated, use active distraction (RESISTT) first, then self-soothe as intensity drops."
+    }
+  ],
+  "distress-tolerance/self-soothing": [
+    {
+      "from": "distress-tolerance/distracting-activities",
+      "relation": "alternative_to",
+      "note": "Both are gentle activity-based ways through distress; self-soothing targets the senses to calm, distraction shifts focus."
+    },
+    {
+      "from": "distress-tolerance/grounding",
+      "relation": "alternative_to",
+      "note": "Both calm through the senses \u2014 grounding reorients to present reality, self-soothing adds pleasant sensory comfort."
     }
   ],
   "distress-tolerance/tipp": [
@@ -260,43 +233,38 @@
       "note": "RESISTT manages the urge by shifting away from it; urge surfing sits with it \u2014 opposite mechanisms."
     }
   ],
-  "distress-tolerance/distracting-activities": [
+  "distress-tolerance/willingness-vs-willfulness": [
     {
-      "from": "distress-tolerance/grounding",
-      "relation": "contrasts_with",
-      "note": "Grounding turns attention toward present sensory reality; distraction turns it away toward an activity."
-    },
-    {
-      "from": "distress-tolerance/recognize-emotional-crisis",
-      "relation": "if_condition",
-      "note": "When the warning sign is an urge to act, buy time by distracting away from it."
-    },
-    {
-      "from": "distress-tolerance/resistt",
+      "from": "distress-tolerance/actions-based-on-values",
       "relation": "pairs_with",
-      "note": "The \"Engage in a distracting activity\" step draws directly on your prepared distraction list."
+      "note": "Willingness is the open stance; your values supply the direction to act in."
     },
-    {
-      "from": "distress-tolerance/self-soothing",
-      "relation": "alternative_to",
-      "note": "Both are gentle activity-based routes through distress; soothing calms via the senses, distraction shifts focus."
-    }
-  ],
-  "distress-tolerance/half-smile": [
     {
       "from": "distress-tolerance/radical-acceptance",
+      "relation": "prerequisite_of",
+      "note": "You must accept the facts before you can willingly, flexibly work with them."
+    }
+  ],
+  "mindfulness/describe-your-emotions": [
+    {
+      "from": "mindfulness/internal-vs-external-events",
       "relation": "pairs_with",
-      "note": "Half Smile is the body-based way to practice non-resistance while you accept."
+      "note": "Once you notice internal events, describing your emotions names the strongest of them."
     },
     {
-      "from": "distress-tolerance/tipp",
-      "relation": "alternative_to",
-      "note": "A gentler body-based option when full TIPP is too much or unavailable."
+      "from": "mindfulness/mental-noting",
+      "relation": "pairs_with",
+      "note": "Noting surfaces emotions in passing; Describe Your Emotions examines one of them in depth."
     },
     {
-      "from": "distress-tolerance/urge-surfing",
+      "from": "mindfulness/mindfulness-of-negative-judgments",
       "relation": "pairs_with",
-      "note": "Soften the body with a half smile while you ride the wave."
+      "note": "Tracks the emotion each judgment produces \u2014 the same emotion-clarity skill from M4."
+    },
+    {
+      "from": "mindfulness/wise-mind",
+      "relation": "builds_on",
+      "note": "Uses emotion-naming as its emotion-mind input, then weighs it against the facts."
     }
   ],
   "mindfulness/internal-vs-external-events": [
@@ -319,6 +287,145 @@
       "from": "mindfulness/wise-mind",
       "relation": "pairs_with",
       "note": "Balancing internal and external awareness is the same integration Wise Mind formalizes for decisions."
+    }
+  ],
+  "mindfulness/letting-go": [
+    {
+      "from": "mindfulness/mental-noting",
+      "relation": "pairs_with",
+      "note": "The non-judgmental \"I am thinking/feeling...\" phrasing is the same move Letting Go uses to reframe a judgment."
+    },
+    {
+      "from": "mindfulness/mindfulness-of-negative-judgments",
+      "relation": "prerequisite_of",
+      "note": "You must first catch automatic judgments before Letting Go can reframe them \u2014 this is the pair's first half."
+    },
+    {
+      "from": "mindfulness/thought-defusion",
+      "relation": "pairs_with",
+      "note": "Both create distance from sticky thoughts \u2014 defusion by imagery, Letting Go by reframing a judgment."
+    }
+  ],
+  "mindfulness/mental-body-scan": [
+    {
+      "from": "mindfulness/internal-vs-external-events",
+      "relation": "pairs_with",
+      "note": "The body scan is a focused way to practice the internal-awareness half of this exercise."
+    },
+    {
+      "from": "mindfulness/mindful-breathing",
+      "relation": "pairs_with",
+      "note": "Two body-based calming practices; pair breath focus with a body scan."
+    },
+    {
+      "from": "mindfulness/observing",
+      "relation": "prerequisite_of",
+      "note": "Observing a single object first builds the attention control you then move across the whole body."
+    }
+  ],
+  "mindfulness/mental-noting": [
+    {
+      "from": "mindfulness/describe-your-emotions",
+      "relation": "pairs_with",
+      "note": "Mental noting labels emotions in passing; describing goes deep into one emotion's action and thoughts."
+    },
+    {
+      "from": "mindfulness/letting-go",
+      "relation": "pairs_with",
+      "note": "The rewrite uses mental noting's \"I am thinking/feeling...\" phrasing to strip judgment from a thought."
+    },
+    {
+      "from": "mindfulness/mindfulness-of-negative-judgments",
+      "relation": "builds_on",
+      "note": "A targeted form of mental noting aimed specifically at judgment thoughts."
+    },
+    {
+      "from": "mindfulness/observing",
+      "relation": "contrasts_with",
+      "note": "Observing anchors on one external object; mental noting tracks the moving stream of thoughts instead."
+    },
+    {
+      "from": "mindfulness/thought-defusion",
+      "relation": "builds_on",
+      "note": "Extends mental noting \u2014 after noting a thought, imagery lets it drift away, loosening its hold."
+    }
+  ],
+  "mindfulness/mindful-breathing": [
+    {
+      "from": "mindfulness/mental-body-scan",
+      "relation": "pairs_with",
+      "note": "Both relax through the body; the scan opens with settling breaths and shares the same calming aim."
+    },
+    {
+      "from": "mindfulness/observing",
+      "relation": "pairs_with",
+      "note": "The breath is a portable object of observation \u2014 use it when no object is at hand."
+    },
+    {
+      "from": "mindfulness/thought-defusion",
+      "relation": "pairs_with",
+      "note": "Steady breathing is the ground from which you watch thoughts pass instead of chasing them."
+    },
+    {
+      "from": "mindfulness/wise-mind",
+      "relation": "builds_on",
+      "note": "Opens with the settling abdominal breath from Mindful Breathing before examining the problem."
+    }
+  ],
+  "mindfulness/mindfulness-of-negative-judgments": [
+    {
+      "from": "mindfulness/letting-go",
+      "relation": "builds_on",
+      "note": "Takes the judgments M9 taught you to notice and reframes them into non-judgmental observation."
+    }
+  ],
+  "mindfulness/observing": [
+    {
+      "from": "distress-tolerance/grounding",
+      "relation": "pairs_with",
+      "note": "Grounding is applied Observing; practicing Observing when calm makes it easier to notice when you need to ground."
+    },
+    {
+      "from": "mindfulness/internal-vs-external-events",
+      "relation": "builds_on",
+      "note": "Applies the observing stance to two arenas at once \u2014 inner experience and the outer environment."
+    },
+    {
+      "from": "mindfulness/letting-go",
+      "relation": "pairs_with",
+      "note": "Rewrite judgments as if observing the situation from outside \u2014 the objective stance from Observing."
+    },
+    {
+      "from": "mindfulness/mental-body-scan",
+      "relation": "builds_on",
+      "note": "The body scan extends single-object observing to sensations across the whole body."
+    },
+    {
+      "from": "mindfulness/mental-noting",
+      "relation": "builds_on",
+      "note": "Turns the observing stance inward, onto the passing stream of thoughts and feelings."
+    },
+    {
+      "from": "mindfulness/mindful-breathing",
+      "relation": "builds_on",
+      "note": "Observing applied to the breath \u2014 a single, always-available object of attention."
+    }
+  ],
+  "mindfulness/thought-defusion": [
+    {
+      "from": "mindfulness/letting-go",
+      "relation": "alternative_to",
+      "note": "Another way to loosen a sticky judgment \u2014 defusion drifts it away, Letting Go rewrites it."
+    },
+    {
+      "from": "mindfulness/mental-noting",
+      "relation": "prerequisite_of",
+      "note": "Noting a thought as a thought is the base Thought Defusion extends into actively creating distance from it."
+    },
+    {
+      "from": "mindfulness/mindful-breathing",
+      "relation": "pairs_with",
+      "note": "Steady breathing is the ground from which you watch and release thoughts."
     }
   ],
   "mindfulness/wise-mind": [
@@ -351,113 +458,6 @@
       "from": "mindfulness/mindful-breathing",
       "relation": "prerequisite_of",
       "note": "Wise Mind opens with abdominal breathing to settle the mind before deciding."
-    }
-  ],
-  "distress-tolerance/grounding": [
-    {
-      "from": "distress-tolerance/half-smile",
-      "relation": "alternative_to",
-      "note": "Both are quiet, low-effort, present-moment ways to settle without physiological intervention."
-    },
-    {
-      "from": "distress-tolerance/recognize-emotional-crisis",
-      "relation": "if_condition",
-      "note": "Cognitive spiral (not bodily arousal) calls for reorienting to the present."
-    },
-    {
-      "from": "distress-tolerance/self-soothing",
-      "relation": "alternative_to",
-      "note": "Both work through the senses \u2014 grounding reorients to the present, self-soothing adds comforting sensory input."
-    }
-  ],
-  "distress-tolerance/actions-based-on-values": [
-    {
-      "from": "distress-tolerance/cost-benefit-analysis",
-      "relation": "pairs_with",
-      "note": "Values clarify which alternative behavior is worth the cost of change."
-    },
-    {
-      "from": "distress-tolerance/radical-acceptance",
-      "relation": "de_escalates_to",
-      "note": "Once you accept what you can't change, channel the freed energy into a value-based proactive plan."
-    },
-    {
-      "from": "distress-tolerance/tipp",
-      "relation": "de_escalates_to",
-      "note": "Once the body is calmer, re-engage with what matters instead of the urge."
-    },
-    {
-      "from": "distress-tolerance/willingness-vs-willfulness",
-      "relation": "de_escalates_to",
-      "note": "Willingness opens you to effective action; your values point to which action."
-    }
-  ],
-  "mindfulness/mental-body-scan": [
-    {
-      "from": "mindfulness/internal-vs-external-events",
-      "relation": "pairs_with",
-      "note": "The body scan is a focused way to practice the internal-awareness half of this exercise."
-    },
-    {
-      "from": "mindfulness/mindful-breathing",
-      "relation": "pairs_with",
-      "note": "Two body-based calming practices; pair breath focus with a body scan."
-    },
-    {
-      "from": "mindfulness/observing",
-      "relation": "prerequisite_of",
-      "note": "Observing a single object first builds the attention control you then move across the whole body."
-    }
-  ],
-  "mindfulness/letting-go": [
-    {
-      "from": "mindfulness/mental-noting",
-      "relation": "pairs_with",
-      "note": "The non-judgmental \"I am thinking/feeling...\" phrasing is the same move Letting Go uses to reframe a judgment."
-    },
-    {
-      "from": "mindfulness/mindfulness-of-negative-judgments",
-      "relation": "prerequisite_of",
-      "note": "You must first catch automatic judgments before Letting Go can reframe them \u2014 this is the pair's first half."
-    },
-    {
-      "from": "mindfulness/thought-defusion",
-      "relation": "pairs_with",
-      "note": "Both create distance from sticky thoughts \u2014 defusion by imagery, Letting Go by reframing a judgment."
-    }
-  ],
-  "mindfulness/mindfulness-of-negative-judgments": [
-    {
-      "from": "mindfulness/letting-go",
-      "relation": "builds_on",
-      "note": "Takes the judgments M9 taught you to notice and reframes them into non-judgmental observation."
-    }
-  ],
-  "distress-tolerance/radical-acceptance": [
-    {
-      "from": "distress-tolerance/accepts",
-      "relation": "de_escalates_to",
-      "note": "Use ACCEPTS until intensity decreases, then shift to Radical Acceptance."
-    },
-    {
-      "from": "distress-tolerance/actions-based-on-values",
-      "relation": "pairs_with",
-      "note": "Accept what you can't change, then invest the freed energy in what you value."
-    },
-    {
-      "from": "distress-tolerance/half-smile",
-      "relation": "de_escalates_to",
-      "note": "The body-calm of a half smile opens the door to accepting what you can't change."
-    },
-    {
-      "from": "distress-tolerance/resistt",
-      "relation": "de_escalates_to",
-      "note": "Once the urge is handled, move from surviving toward accepting what you cannot change."
-    },
-    {
-      "from": "distress-tolerance/willingness-vs-willfulness",
-      "relation": "pairs_with",
-      "note": "You radically accept the facts first; willingness is the flexible stance you then take toward them."
     }
   ]
 }

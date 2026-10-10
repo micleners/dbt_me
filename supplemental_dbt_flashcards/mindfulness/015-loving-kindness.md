@@ -1,7 +1,7 @@
 ---
 deck_card_no: 15
 title: Loving-Kindness
-tagline: Practice mindful compassion
+tagline: Bring compassion into mindfulness.
 deck_module: MINDFULNESS
 module: mindfulness
 deck: TBD
@@ -12,24 +12,18 @@ repo_overlap:
   gap: No compassion-building practice (toward others or self) exists in the graph, and no ramp covers self-criticism, resentment, or disconnection.
 ---
 
-## Front
+## Summary
 
-**Loving-Kindness**
+Loving-kindness comes from the Buddhist practice of metta: deliberately directing good wishes toward someone else, toward yourself, or toward everyone.
 
-Practice mindful compassion
+## Practice
 
-## Back
-
-In the Buddhist practice of "metta," or "Loving-Kindness" meditation, you send well wishes to another person, to yourself, or to the whole world.
-
-### Practice suggestion
-
-1. Sit with your hands open on your lap or over your heart. Think of someone you love easily, like a pet or best friend; feel your warm love for them.
-2. Send them well wishes by silently repeating a mantra (e.g., "May you be happy, may you be safe").
-3. After a few minutes, send well wishes to yourself. If this feels hard, visualize yourself as a child or use other mantras ("May I learn to be kind to myself, may I accept challenges with grace," etc.).
+1. Sit with your hands resting open in your lap or on your chest. Bring to mind someone it's easy to love, such as a close friend or a pet, and let yourself feel that warmth.
+2. Silently repeat a short wish for them, e.g. "May you be happy, may you be safe."
+3. After a few minutes, turn the wishes toward yourself. If that's difficult, picture yourself as a child, or use gentler phrases about learning self-kindness and meeting hard things gracefully.
 
 ## Notes
 
 - Loving kindness appears in Linehan's DBT Skills Training Manual (2nd ed.) as a supplementary mindfulness skill, so it is canonical DBT, not a deck addition.
-- Closest repo material: self-validation (E5, raw only) overlaps step 3; RESISTT's FAQ "talk to a friend" tip echoes the "visualize yourself as a child" move.
+- Closest repo material: self-validation (E5, raw only) overlaps step 3; RESISTT's FAQ "talk to a friend" tip echoes the "picture yourself as a child" move.
 - Integration idea: a new Mindfulness node (M11) if dialecticalbehaviortherapy.com has a page for it; pair with self-validation once Emotion Regulation is built.

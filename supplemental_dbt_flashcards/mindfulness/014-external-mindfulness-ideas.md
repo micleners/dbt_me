@@ -1,7 +1,7 @@
 ---
 deck_card_no: 14
 title: External Mindfulness Ideas
-tagline: Focus on external sensations to ground yourself
+tagline: Use what's around you to get grounded.
 deck_module: MINDFULNESS
 module: mindfulness
 deck: TBD
@@ -12,22 +12,21 @@ repo_overlap:
   gap: The 5-4-3-2-1 exercise and the quick in-the-moment micro-exercises; the repo's versions are longer structured practices.
 ---
 
-## Front
+## Summary
 
-**External Mindfulness Ideas**
+Apply Observing (deck card 2) and Describing (deck card 3) to the world outside you rather than to your inner experience. Attending to outside sensations builds mindfulness and steadies you under stress, and it's especially useful when inner sensations are too intense to sit with, or when you can't access them at all.
 
-Focus on external sensations to ground yourself
+## Practice
 
-## Back
-
-Observing (Card 2) and Describing (Card 3) external sensations can improve mindfulness and can help you feel grounded during stressful moments, particularly if internal sensations feel overwhelming or unavailable to you.
-
-### Practice suggestions
-
-Try the 5-4-3-2-1 exercise: name five things you see, four things you hear, three things you can touch, two things you smell, and one thing you can taste right now. Count all the things around you that are blue (or any color). Listen to music, paying attention to just one instrument. Touch things that are soft, cold, warm, rough, or notably textured. Smell the herbs and spices in your pantry, noticing different scent qualities. Taste the different flavors in your next snack or meal.
+- **5-4-3-2-1:** name 5 things you can see, 4 you can hear, 3 you can touch, 2 you can smell, and 1 you can taste.
+- **Color hunt:** count everything nearby in one color.
+- **One instrument:** listen to a piece of music while following a single instrument.
+- **Texture:** touch things that are soft, cold, warm, rough, or otherwise distinctive.
+- **Scent:** smell herbs and spices from the kitchen and notice how they differ.
+- **Taste:** pick out the separate flavors in your next meal or snack.
 
 ## Notes
 
-- The purpose (sensory reorientation during distress) matches `distress-tolerance/grounding`; the "internal sensations feel overwhelming" rationale matches `mindfulness/internal-vs-external-events` Part A.
-- The deck's "Describing (Card 3)" is applied to external sensations; the repo's describing card (`mindfulness/describe-your-emotions`) is internal only.
+- The purpose (sensory reorientation during distress) matches `distress-tolerance/grounding`; the "inner sensations are too much" rationale matches `mindfulness/internal-vs-external-events` Part A.
+- The deck applies Describing to external sensations; the repo's describing card (`mindfulness/describe-your-emotions`) is internal only.
 - Integration idea: add 5-4-3-2-1 and the micro-exercises to Grounding as a short form, rather than a new node.

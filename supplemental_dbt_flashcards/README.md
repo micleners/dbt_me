@@ -1,6 +1,6 @@
 # Supplemental DBT flashcards
 
-A holding area for transcriptions of a physical DBT flash card deck, documented card by card. This content is **not** part of the graph: `build.py` only reads `cards/`, and nothing here is linked from `ramps.yaml`. How (or whether) each card gets folded into the graph is decided later; the `repo_overlap` block on each card records the starting assessment.
+A holding area for paraphrased notes on a physical DBT flash card deck, documented card by card. This content is **not** part of the graph: `build.py` only reads `cards/`, and nothing here is linked from `ramps.yaml`. How (or whether) each card gets folded into the graph is decided later; the `repo_overlap` block on each card records the starting assessment.
 
 ## Layout
 
@@ -19,8 +19,8 @@ Frontmatter:
 | Field | Meaning |
 |---|---|
 | `deck_card_no` | Number printed on the card (integer). |
-| `title` | Title printed on the front, verbatim. |
-| `tagline` | One-line subtitle printed on the front, verbatim. |
+| `title` | Title printed on the front (a name, kept as printed). |
+| `tagline` | The front's one-line subtitle, paraphrased. |
 | `deck_module` | Module label printed on the front, verbatim. |
 | `module` | Repo module slug that label maps to. |
 | `deck` | Which deck this came from (title/publisher), once known. |
@@ -31,5 +31,7 @@ Frontmatter:
 
 Body:
 
-- `## Front` and `## Back` hold the deck's text **verbatim**: wording, headings and lists kept as printed. Words hyphenated across a printed line break are rejoined, and paragraphs are single lines (no hard wrapping).
-- `## Notes` holds anything that is ours rather than the deck's (overlap reasoning, integration ideas). Keep the deck's text and our commentary separate so the verbatim part stays clean.
+- `## Summary` paraphrases what the card says the skill is and why it helps, in our own words, in the same condensed style as `cards/`. Don't copy the deck's sentences; short fixed phrases (a mantra, a named exercise like "5-4-3-2-1") are fine.
+- `## Practice` paraphrases the card's practice suggestions, keeping their steps and their order.
+- `## Notes` holds our own commentary (overlap reasoning, integration ideas), kept apart from the paraphrase of the card.
+- Paragraphs are single lines (no hard wrapping).
