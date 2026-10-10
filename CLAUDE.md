@@ -8,7 +8,7 @@ A traversable graph of DBT (Dialectical Behavior Therapy) skill "cards" that you
 
 ## Grounding
 
-DBT is Marsha Linehan's framework, organized into four skills modules: **Mindfulness**, **Distress Tolerance**, **Emotion Regulation**, **Interpersonal Effectiveness**. Card content is sourced verbatim from https://dialecticalbehaviortherapy.com — that website *is* the card deck for this project. One page = one card = one node.
+DBT is Marsha Linehan's framework, organized into four skills modules: **Mindfulness**, **Distress Tolerance**, **Emotion Regulation**, **Interpersonal Effectiveness**. Card content is sourced from https://dialecticalbehaviortherapy.com and paraphrased into cards — that website *is* the card deck for this project. One page = one card = one node.
 
 ## Structure
 
@@ -18,7 +18,7 @@ build.py           No-dependency build step: validates the graph, generates back
 ramps.yaml         Entry ramps (felt-state / situation / goal) that point into the graph.
 backlinks.json     Generated reverse index. Never hand-edited.
 cards/<module>/    One Markdown+YAML file per card (node + its outgoing edges).
-raw/<module>/      Verbatim page dumps (permanent fetch cache; never re-fetched).
+raw/<module>/      Summarized page dumps with quoted excerpts (not verbatim; permanent fetch cache; never re-fetched).
 methodology/       How a module was built + a reusable prompt to build the rest.
 validation/        External research validating the data model.
 ```
