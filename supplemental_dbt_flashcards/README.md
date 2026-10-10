@@ -5,12 +5,12 @@ A holding area for transcriptions of a physical DBT flash card deck, documented 
 ## Layout
 
 ```
-supplemental_dbt_flashcards/<module>/<###>_<card_title>.md
+supplemental_dbt_flashcards/<module>/<###>-<card-title>.md
 ```
 
 - `<module>` uses the repo's module slugs: `mindfulness`, `distress-tolerance`, `emotion-regulation`, `interpersonal-effectiveness`. A deck category that isn't one of the four gets its own folder named after the label printed on the card.
 - `<###>` is the deck's printed card number, zero-padded to three digits. It is the deck's number, not a repo `card_no` (M1, T5, ...).
-- `<card_title>` is the printed title in lowercase snake_case.
+- `<card-title>` is the printed title in lowercase kebab-case, matching `cards/` and `raw/`.
 
 ## Card format
 
