@@ -92,7 +92,8 @@ def main():
         cards[card["id"]] = card
 
     ids = set(cards)
-    backlinks = {cid: [] for cid in ids}
+    # Sorted keys and entries keep backlinks.json byte-stable across runs.
+    backlinks = {cid: [] for cid in sorted(ids)}
     unresolved_cross, unresolved_broken = [], []
 
     for cid, card in cards.items():
@@ -107,6 +108,8 @@ def main():
             else:
                 unresolved_broken.append((cid, tgt))
 
+    for entries in backlinks.values():
+        entries.sort(key=lambda b: (b["from"], b["relation"] or ""))
     OUT_FILE.write_text(json.dumps(backlinks, indent=2), encoding="utf-8")
 
     # ---- report ----

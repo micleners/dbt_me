@@ -10,7 +10,7 @@ Content lives as Markdown + YAML frontmatter so it is human-editable and git-dif
 dbt_me/
   SCHEMA.md                     <- this file
   raw/
-    <module>/T##-<card>.md      <- verbatim page dump (cache; never re-fetched)
+    <module>/T##-<card>.md      <- summarized page dump, not verbatim (cache; never re-fetched)
   cards/
     <module>/<card>.md          <- one file per card (node + its outgoing edges)
   ramps.yaml                    <- entry points (felt-state / situation / goal)

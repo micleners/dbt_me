@@ -2,7 +2,7 @@
 
 A traversable graph of DBT skill cards. You start from what you're feeling — a felt state, a situation, or a goal — and crawl typed links between skills to reach a concrete suggestion. The chat interface is the crawler today; a web app over the same structured data comes later. **The graph is the product; clients are interchangeable renderers on top of it.**
 
-DBT (Dialectical Behavior Therapy, Marsha Linehan's framework) has four skills modules: Mindfulness, Distress Tolerance, Emotion Regulation, Interpersonal Effectiveness. Card content is sourced verbatim from https://dialecticalbehaviortherapy.com — that site *is* the card deck. One page = one card = one node.
+DBT (Dialectical Behavior Therapy, Marsha Linehan's framework) has four skills modules: Mindfulness, Distress Tolerance, Emotion Regulation, Interpersonal Effectiveness. Card content is sourced from https://dialecticalbehaviortherapy.com and paraphrased into cards — that site *is* the card deck. One page = one card = one node.
 
 ## Start here
 
@@ -22,7 +22,7 @@ build.py           no-dependency validator + backlinks.json generator
 ramps.yaml         entry ramps (felt-state / situation / goal)
 backlinks.json     generated reverse index (never hand-edited)
 cards/<module>/    one card (node + outgoing edges) per file
-raw/<module>/       verbatim page caches (never re-fetched)
+raw/<module>/       summarized page caches with quoted excerpts (not verbatim; never re-fetched)
 methodology/       how a module is built + the enhancement backlog
 validation/        data-model validation research
 ```
