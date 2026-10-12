@@ -33,3 +33,11 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 **What:** Not a change — a convention to reuse. The recurring tension between *distract away from* a feeling and *stay with / accept* it is well captured by `contrasts_with` (e.g. ACCEPTS / RESISTT vs. Urge Surfing).
 
 **Why:** Recording it so future modules model the same axis consistently instead of inventing new relations for it.
+
+## 5. Mindfulness "What"/"How" skills missing from the graph — open
+
+**What:** Participate and the three "How" skills (Nonjudgmentally, One-mindfully, Effectively) have no graph cards, though the flash card deck covers them.
+
+**Why:** It's unclear whether the source site lacks them or the M1–M10 fetch missed its overview page. If the site lacks them, decide whether a non-site source (the deck) may back a graph card.
+
+**Trigger:** Next session with network access to the source site. Procedure and findings: `methodology/investigations/mindfulness-what-how-skills.md`.
