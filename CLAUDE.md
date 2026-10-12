@@ -15,7 +15,7 @@ cards/<module>/               One Markdown+YAML card per page: the node and its 
 raw/<module>/                 Fetch cache: summarized pages with quoted excerpts, not verbatim. Never re-fetch.
 supplemental_dbt_flashcards/  Paraphrased notes on a physical flash card deck; outside the graph until integrated.
 methodology/                  How modules are built, plus a reusable build prompt.
-.claude/skills/               Agent skills, e.g. dbt-conversation (how to talk with a person).
+.claude/skills/               Agent skills: dbt-conversation (talking with a person), dbt-flashcard-ingest (logging deck cards).
 validation/                   External research validating the data model.
 ```
 
@@ -38,7 +38,7 @@ Applies to `cards/` and `supplemental_dbt_flashcards/`.
 - Our additions (DBT knowledge, overlap, integration ideas) go in edge `note`s or a `## Notes` section, never in the paraphrase.
 - Don't force-wrap markdown: one line per paragraph.
 
-**Supplemental flashcards:** for each deck photo, write `supplemental_dbt_flashcards/<module>/<###>-<card-title>.md` (deck number zero-padded, title in kebab-case) in the format that folder's `README.md` defines, including the `repo_overlap` assessment.
+**Supplemental flashcards:** ingest deck cards with the `dbt-flashcard-ingest` skill.
 
 ## Talking with a person
 
