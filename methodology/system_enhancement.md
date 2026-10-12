@@ -41,3 +41,11 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 **Why:** It's unclear whether the source site lacks them or the M1–M10 fetch missed its overview page. If the site lacks them, decide whether a non-site source (the deck) may back a graph card.
 
 **Trigger:** Next session with network access to the source site. Procedure and findings: `methodology/investigations/mindfulness-what-how-skills.md`.
+
+## 6. Integrate deck flashcards into the graph — open
+
+**What:** Give each deck card one action (supplement an existing card, new node, hub, or defer) and wire supplements in via a generated `supplements.json`.
+
+**Why:** Deck cards 001–015 overlap the Mindfulness graph unevenly: most add practices to existing cards, three teach skills the graph lacks.
+
+**Trigger:** After the What/How investigation (§5). Proposal and per-card dispositions: `methodology/deck_integration.md`.
