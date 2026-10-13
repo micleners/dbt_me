@@ -1,55 +1,29 @@
 # Building a module
 
-How the **Distress Tolerance** module was built, and a reusable prompt to build the remaining three the same way. Read `SCHEMA.md` first — this doc assumes the data model.
+Per-module build procedure, plus a prompt to run it. Read `SCHEMA.md` first; this doc assumes the data model. Module status lives in `CLAUDE.md`; cross-cutting findings go in `system_enhancement.md`.
 
-## Progress
+## Pipeline
 
-- **Distress Tolerance** — complete (13 pages, T1–T13). The original build this doc is written from.
-- **Mindfulness** — complete (10 pages, M1–M10, 34 edges, 6 ramps). Added the `builds_on` relation to `SCHEMA.md` and resolved the cross-module edges Distress Tolerance pointed at (`mindfulness/wise-mind`, `mindfulness/observing`). Removed `mindfulness` from `build.py`'s `FUTURE_MODULES`.
-- **Emotion Regulation** — in progress. 12 pages (E1–E12). URL quirk: E1–E10 sit under `/emotional-regulation/`, but E11 STOP and E12 ABC PLEASE sit under `/emotion-regulation/` (no "-al"). Raw pages fetched to `raw/emotion-regulation/`; Opus page authoring not yet started.
-- **Interpersonal Effectiveness** — in progress. 13 pages (I1–I13). URL quirk: I10's page slug is misspelled `resisitance-and-conflict` (extra "i") on the source site; use it verbatim. Acronym skills: I11 DEAR MAN, I12 FAST, I13 GIVE. Raw pages fetched to `raw/interpersonal-effectiveness/`; Opus page authoring not yet started.
+1. **Enumerate the module's pages.** Crawl the module's parent page on https://dialecticalbehaviortherapy.com for every exercise (name + URL). Verify the count against the page DOM or a screenshot; the fetcher's summarizer silently truncates lists.
+2. **Record URL quirks.** Capture each page's real URL; some sit outside the module path or are misspelled. Use them verbatim. Known: T2 sits under `/emotional-regulation/`; E11 and E12 sit under `/emotion-regulation/`; I10's slug is `resisitance-and-conflict`.
+3. **One source page = one node.** Acronym skills (TIPP, ACCEPTS, DEAR MAN) stay single nodes with their letters in the body; don't split into per-letter children.
+4. **Fetch via one haiku sub-agent.**
+   - Dispatch ONE `general-purpose` agent on `haiku` to fetch all pages serially into `raw/<module>/<prefix>##-slug.md` (prefix T, M, E, I) with `source_url` + `fetched` frontmatter.
+   - Have it return only a manifest: per page, title, one-line summary, in-body links to other exercises.
+   - Expect summaries with quoted key lines, not verbatim text; that is enough to paraphrase from.
+   - `raw/` is a permanent cache; never re-fetch a cached page. For exact wording, `curl` the HTML instead.
+5. **Author pages in the main context, not a sub-agent.** Edges need all pages in view. Write `pages/<module>/<slug>.md` with the frontmatter in `SCHEMA.md` and a distilled body that points to `source_url`.
+6. **Derive edges semantically.** In-body site links are mostly module navigation; use them only as corroboration. Enforce 3–6 outbound edges per page, a `note` on every edge, and the most true relation, not the most generic.
+7. **Write `ramps.yaml` entries.** `kind: felt-state | situation | goal`, a `cue`, edges in; `primary: true` marks the first suggestion. A gateway page is a ramp target whose own edges do the branching.
+8. **Validate.** Run `python build.py` until clean; remove the module from `FUTURE_MODULES` in `build.py`. Edges into unbuilt modules are reported, not errors.
+9. **Smoke-test by crawling.** Walk one realistic scenario through the edges to a suggestion. Fix dead ends and mis-fitting hops in the edges.
+10. **Update status** in `CLAUDE.md`.
 
-## The pipeline we used
+## Prompt
 
-1. **Enumerate the module's pages.** Crawl the module's parent page on https://dialecticalbehaviortherapy.com to list every exercise (name + URL). Verify the count against a second source (the page DOM or a screenshot) — the fetcher's summarizer silently truncated lists, and the true count came from the DOM. Distress Tolerance = 13 pages (T1–T13), despite an initial guess of 18.
+> Build the **`<MODULE>`** module (parent page `<PARENT_URL>`) for dbt_me. Read `CLAUDE.md`, `SCHEMA.md`, and `methodology/module_fetch.md`, then follow the pipeline exactly. Report the enumerated page list and count before fetching; skip fetching if `raw/<module>/` is already populated. Finish with what the smoke-test crawl surfaced and which edges you fixed.
 
-2. **Record URL quirks.** Source page URLs don't always sit under the module's path. Example: T2 "Recognize Emotional Crisis" lives under `/emotional-regulation/…` though it is page T2 of Distress Tolerance. Capture the real URL per page.
-
-3. **Fix granularity up front: one source page = one page = one node.** Acronym skills (TIPP, ACCEPTS, RESISTT) stay *single* nodes with their letters described in the body — do not split into per-letter children unless traversal later demands it.
-
-4. **Fetch via a single haiku sub-agent.** Dispatch ONE `general-purpose` agent on the `haiku` model to fetch all pages serially and write each to `raw/<module>/T##-slug.md`, with `source_url` + `fetched` frontmatter. **The resulting dumps are not verbatim.** The fetch tool passes each page through a model before the agent sees it, so what lands in `raw/` is a faithful summary with direct quotes for key lines, not the page text: sections are condensed, worked examples are abridged ("*Example provided:* ..."), and worksheets and links are described rather than reproduced. That has been accurate enough to author paraphrased pages from, which is all `raw/` is used for. If exact wording is ever needed, fetch the raw HTML (e.g. `curl`) and convert it to text instead. One agent = one cold start (cheapest) and keeps raw page text out of the orchestrator's context. Have it return only a manifest: per page, title, one-line summary, and in-body links to other exercises. `raw/` is a permanent cache — never re-fetch.
-
-5. **Author pages (orchestrator, not a sub-agent).** Read the raw dumps and write `pages/<module>/<slug>.md`: frontmatter (`id`, `title`, `module`, `page_no`, `source_url`, `type`, `category`, `summary`, `tags`, `when_to_use`, `when_not_to_use`, `edges`) plus a distilled prose body that points to `source_url` for full detail. Do the authoring yourself in the main context — edges are a global problem and need all pages in view.
-
-6. **Derive edges semantically.** The site's in-body links are mostly module navigation (every page links to most others) — noise, not signal. Derive typed edges from the *content* and DBT knowledge; use the curated in-body links only as corroboration. Enforce the guardrails: 3–6 outbound edges per page, a mandatory `note` on every edge, and pick the relation that is *most true*, not the most generic.
-
-7. **Write `ramps.yaml`.** Entry ramps by `kind: felt-state | situation | goal`, each with a `cue` and edges into the graph (`primary: true` marks the first suggestion). A "gateway" page (e.g. Recognize Emotional Crisis) is a ramp target whose own edges do the branching.
-
-8. **Validate + generate.** Run `python build.py`. It writes `backlinks.json` and fails non-zero on a broken intra-module edge, a page outside 3–6, or an unresolved ramp target. Cross-module edges into unbuilt modules are expected and reported separately, not errors.
-
-9. **Smoke-test by crawling.** Feed the finished module a realistic scenario in chat and walk the edges to a suggestion. Dead ends and mis-fitting hops are data — fix the edges, don't paper over them.
-
-Cross-cutting findings from building a module (new relations, missing ramps, client architecture) are tracked in `system_enhancement.md`, not here — this doc stays focused on the per-module procedure.
-
----
-
-## Reusable prompt — build the next module
-
-> Paste this to a fresh session (or continue an existing one) to build **Mindfulness**, **Emotion Regulation**, or **Interpersonal Effectiveness**. Replace `<MODULE>` and `<PARENT_URL>`.
-
-You are building the **`<MODULE>`** module for the dbt_me project. Read `SCHEMA.md`, `CLAUDE.md`, and `methodology/module_fetch.md` first, then follow the 9-step pipeline in that methodology doc exactly. Specifics:
-
-1. Crawl `<PARENT_URL>` to enumerate every exercise (name + full URL). **Verify the count** against the page DOM or a screenshot before proceeding — do not trust the summarized list alone. Report the list and count back before fetching.
-2. Note any page whose URL sits outside the module path.
-3. Keep one source page = one page; do not split acronym skills into per-letter nodes.
-4. Dispatch ONE haiku `general-purpose` sub-agent to fetch all pages serially into `raw/<module-dir>/T##-slug.md` with `source_url` + `fetched` frontmatter (expect summarized dumps with quoted excerpts, not verbatim text), returning only a manifest (title, one-line summary, in-body exercise links).
-5. Author each page yourself from the raw dumps, following the frontmatter shape and 3–6 edge / mandatory-`note` guardrails. Derive edges semantically; treat in-body nav links as noise.
-6. If this is **Mindfulness**: first add a `builds_on` relation to `SCHEMA.md`'s vocabulary (reverse of `prerequisite_of`), then resolve the cross-module edges Distress Tolerance already points at — `mindfulness/wise-mind`, `mindfulness/observing`, `mindfulness/mindful-breathing` must exist as real page ids (match those exact slugs).
-7. Add module-appropriate entries to `ramps.yaml`.
-8. Run `python build.py` until it exits clean (no broken intra-module edges, all pages within 3–6, all ramp targets resolve).
-9. Smoke-test with one realistic scenario crawl, then report what the crawl surfaced and any edges you had to fix.
-
-Module parent pages (verify each before fetching):
-- Mindfulness — https://dialecticalbehaviortherapy.com/mindfulness/
-- Emotion Regulation — https://dialecticalbehaviortherapy.com/emotional-regulation/
-- Interpersonal Effectiveness — https://dialecticalbehaviortherapy.com/interpersonal-effectiveness/
+Parent pages:
+- Mindfulness: https://dialecticalbehaviortherapy.com/mindfulness/
+- Emotion Regulation: https://dialecticalbehaviortherapy.com/emotional-regulation/
+- Interpersonal Effectiveness: https://dialecticalbehaviortherapy.com/interpersonal-effectiveness/
