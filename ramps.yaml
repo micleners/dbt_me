@@ -264,3 +264,84 @@ ramps:
         note: Honesty, understanding and respect, consistency.
       - to: interpersonal-effectiveness/interpersonal-boundaries
         note: Open up at the pace the other person does.
+
+  # ---------- EMOTION REGULATION ----------
+  - id: ramp/about-to-react
+    kind: situation
+    cue: "Something just set me off and I'm about to say or do something on impulse."
+    edges:
+      - to: emotion-regulation/stop
+        primary: true
+        note: Freeze, step back, observe, then choose.
+      - to: distress-tolerance/tipp
+        note: If breathing isn't enough to bring your body down, reset it physically.
+
+  - id: ramp/recurring-trigger
+    kind: situation
+    cue: "The same kind of situation keeps setting me off."
+    edges:
+      - to: emotion-regulation/problem-solving
+        primary: true
+        note: Analyze the trigger, pick what you can change, plan an alternative.
+      - to: emotion-regulation/recognizing-your-emotions
+        note: First map the chain from trigger to emotion, urge, action, and outcome.
+      - to: emotion-regulation/coping-ahead
+        note: Then rehearse the new response before it comes up again.
+
+  - id: ramp/avoiding-hiding
+    kind: felt-state
+    cue: "Anxious, ashamed, or low, and the urge is to avoid, hide, or isolate."
+    edges:
+      - to: emotion-regulation/balancing-emotional-urges
+        primary: true
+        note: If the urge won't help, do the opposite of what it says.
+      - to: emotion-regulation/emotion-exposure
+        note: If the emotion keeps returning, practice sitting with it instead of escaping.
+
+  - id: ramp/judging-my-feelings
+    kind: felt-state
+    cue: "Beating myself up for feeling this way; I shouldn't feel like this."
+    edges:
+      - to: emotion-regulation/self-validation
+        primary: true
+        note: Acknowledge, allow, understand; stop adding feelings about the feeling.
+      - to: emotion-regulation/myths-emotions
+        note: Check which beliefs about emotions are fueling the judgment.
+
+  - id: ramp/run-down
+    kind: felt-state
+    cue: "Run down, tired, or unwell, and every little thing sets me off."
+    edges:
+      - to: emotion-regulation/abc-please
+        primary: true
+        note: Shore up the basics (sleep, food, exercise, illness, substances, positives).
+      - to: emotion-regulation/emotions-physical-vulnerability
+        note: The fuller plan for diet, sleep, exercise, and stressors.
+
+  - id: ramp/distorted-thoughts
+    kind: felt-state
+    cue: "My thoughts are spiraling: always, never, everyone hates me, worst case."
+    edges:
+      - to: emotion-regulation/emotions-cognitive-vulnerability
+        primary: true
+        note: Name the distortion and write a rational response.
+      - to: mindfulness/thought-defusion
+        note: If arguing with the thought doesn't work, step back from it instead.
+
+  - id: ramp/cant-get-going
+    kind: goal
+    cue: "I'm too low to get anything done and things are piling up."
+    edges:
+      - to: emotion-regulation/being-effective
+        primary: true
+        note: Break the next task into the smallest concrete step and do it.
+      - to: emotion-regulation/abc-please
+        note: Accumulate small positives and build mastery to lift the baseline.
+
+  - id: ramp/prepare-for-hard-event
+    kind: goal
+    cue: "I have something stressful coming up and want to be ready for it."
+    edges:
+      - to: emotion-regulation/coping-ahead
+        primary: true
+        note: Describe it, choose a skill, and rehearse it until you feel prepared.

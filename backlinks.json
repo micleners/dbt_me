@@ -41,6 +41,11 @@
       "from": "distress-tolerance/willingness-vs-willfulness",
       "relation": "de_escalates_to",
       "note": "Willingness opens you to effective action; your values point to which action."
+    },
+    {
+      "from": "emotion-regulation/being-effective",
+      "relation": "builds_on",
+      "note": "The long-term part draws its goals from the Actions Based on Values worksheet."
     }
   ],
   "distress-tolerance/cost-benefit-analysis": [
@@ -138,6 +143,16 @@
       "note": "You radically accept the facts first; willingness is the flexible stance you then take toward them."
     },
     {
+      "from": "emotion-regulation/emotion-exposure",
+      "relation": "pairs_with",
+      "note": "The source links Radical Acceptance as the companion stance."
+    },
+    {
+      "from": "emotion-regulation/problem-solving",
+      "relation": "if_condition",
+      "note": "Accept the fixed part, then work on your thoughts and responses as the source suggests."
+    },
+    {
       "from": "interpersonal-effectiveness/fast",
       "relation": "if_condition",
       "note": "The source points to Radical Acceptance for guilt or shame after owning a mistake."
@@ -214,6 +229,11 @@
       "from": "distress-tolerance/urge-surfing",
       "relation": "pairs_with",
       "note": "A cold-temperature jolt (TIPP's ice cube) can steady you while you surf a strong urge."
+    },
+    {
+      "from": "emotion-regulation/stop",
+      "relation": "escalates_to",
+      "note": "TIPP is the body-brake when STOP's step back and breaths aren't enough."
     }
   ],
   "distress-tolerance/urge-surfing": [
@@ -241,6 +261,16 @@
       "from": "distress-tolerance/resistt",
       "relation": "contrasts_with",
       "note": "RESISTT manages the urge by shifting away from it; urge surfing sits with it \u2014 opposite mechanisms."
+    },
+    {
+      "from": "emotion-regulation/emotion-exposure",
+      "relation": "alternative_to",
+      "note": "Urge Surfing rides out an urge; exposure rides out the emotion behind it. Same wave-like logic."
+    },
+    {
+      "from": "emotion-regulation/emotions-physical-vulnerability",
+      "relation": "if_condition",
+      "note": "Riding out the urge is a way to stop feeding the habit this page flags."
     }
   ],
   "distress-tolerance/willingness-vs-willfulness": [
@@ -253,6 +283,190 @@
       "from": "distress-tolerance/radical-acceptance",
       "relation": "prerequisite_of",
       "note": "You must accept the facts before you can willingly, flexibly work with them."
+    }
+  ],
+  "emotion-regulation/abc-please": [
+    {
+      "from": "emotion-regulation/being-effective",
+      "relation": "pairs_with",
+      "note": "This is ABC PLEASE's Build mastery letter worked out as a goal plan."
+    },
+    {
+      "from": "emotion-regulation/coping-ahead",
+      "relation": "part_of",
+      "note": "Coping ahead is the C in ABC."
+    },
+    {
+      "from": "emotion-regulation/emotions-physical-vulnerability",
+      "relation": "alternative_to",
+      "note": "PLEASE covers the same body-care areas as a memorable acronym."
+    },
+    {
+      "from": "interpersonal-effectiveness/dear-man",
+      "relation": "if_condition",
+      "note": "The source recommends lowering emotional intensity with ABC PLEASE first."
+    }
+  ],
+  "emotion-regulation/balancing-emotional-urges": [
+    {
+      "from": "emotion-regulation/being-effective",
+      "relation": "if_condition",
+      "note": "Acting opposite to the urge to isolate or avoid gets the first task done."
+    },
+    {
+      "from": "emotion-regulation/coping-ahead",
+      "relation": "pairs_with",
+      "note": "The source's example rehearses opposite action for social anxiety."
+    },
+    {
+      "from": "emotion-regulation/emotion-exposure",
+      "relation": "contrasts_with",
+      "note": "Exposure holds still and lets the emotion pass; opposite action does the reverse of what it urges. Choose by whether staying still or acting differently fits."
+    },
+    {
+      "from": "emotion-regulation/myths-emotions",
+      "relation": "if_condition",
+      "note": "Opposite action is the practical counter to that belief."
+    },
+    {
+      "from": "emotion-regulation/recognizing-your-emotions",
+      "relation": "prerequisite_of",
+      "note": "You need to see the urge before you can judge whether it's effective and act opposite."
+    }
+  ],
+  "emotion-regulation/being-effective": [
+    {
+      "from": "emotion-regulation/abc-please",
+      "relation": "pairs_with",
+      "note": "Turns Build mastery into concrete short- and long-term goal steps."
+    }
+  ],
+  "emotion-regulation/coping-ahead": [
+    {
+      "from": "emotion-regulation/abc-please",
+      "relation": "pairs_with",
+      "note": "The full rehearsal procedure behind the C letter."
+    },
+    {
+      "from": "emotion-regulation/balancing-emotional-urges",
+      "relation": "pairs_with",
+      "note": "The source's Coping Ahead example rehearses opposite action before a feared event."
+    },
+    {
+      "from": "emotion-regulation/problem-solving",
+      "relation": "prerequisite_of",
+      "note": "Coping Ahead rehearses the solution you choose here."
+    }
+  ],
+  "emotion-regulation/emotion-exposure": [
+    {
+      "from": "emotion-regulation/balancing-emotional-urges",
+      "relation": "contrasts_with",
+      "note": "Opposite action changes what you do; exposure changes nothing and waits the emotion out."
+    },
+    {
+      "from": "emotion-regulation/myths-emotions",
+      "relation": "pairs_with",
+      "note": "The source links exposure as the practice for myths that emotions must be avoided or acted on."
+    },
+    {
+      "from": "emotion-regulation/self-validation",
+      "relation": "prerequisite_of",
+      "note": "Allowing an emotion is the stance exposure asks you to hold for five minutes."
+    }
+  ],
+  "emotion-regulation/emotions-cognitive-vulnerability": [
+    {
+      "from": "emotion-regulation/emotions-physical-vulnerability",
+      "relation": "pairs_with",
+      "note": "The companion page on thought patterns; body and mind are the two sides of vulnerability."
+    }
+  ],
+  "emotion-regulation/emotions-physical-vulnerability": [
+    {
+      "from": "emotion-regulation/abc-please",
+      "relation": "alternative_to",
+      "note": "The longer page on diet, sleep, exercise, stress, and addiction covers PLEASE in more depth."
+    },
+    {
+      "from": "emotion-regulation/emotions-cognitive-vulnerability",
+      "relation": "pairs_with",
+      "note": "The companion page on the body; thoughts and physical state are the two sides of vulnerability."
+    }
+  ],
+  "emotion-regulation/myths-emotions": [
+    {
+      "from": "emotion-regulation/self-validation",
+      "relation": "if_condition",
+      "note": "Examine the myth behind the judgment so it stops recurring."
+    }
+  ],
+  "emotion-regulation/problem-solving": [
+    {
+      "from": "emotion-regulation/coping-ahead",
+      "relation": "builds_on",
+      "note": "Problem Solving picks the response; Coping Ahead rehearses it."
+    },
+    {
+      "from": "emotion-regulation/emotions-cognitive-vulnerability",
+      "relation": "prerequisite_of",
+      "note": "Problem Solving's brainstorming step asks you to reframe exactly these distortions."
+    },
+    {
+      "from": "emotion-regulation/recognizing-your-emotions",
+      "relation": "prerequisite_of",
+      "note": "Problem Solving opens with the same behavior analysis of trigger, emotion, and thoughts."
+    }
+  ],
+  "emotion-regulation/recognizing-your-emotions": [
+    {
+      "from": "emotion-regulation/balancing-emotional-urges",
+      "relation": "builds_on",
+      "note": "You need to name the emotion and its urge before you can choose the opposite."
+    },
+    {
+      "from": "emotion-regulation/problem-solving",
+      "relation": "builds_on",
+      "note": "Step one's behavior analysis is the same trigger-emotion-thought breakdown."
+    },
+    {
+      "from": "emotion-regulation/self-validation",
+      "relation": "pairs_with",
+      "note": "That analysis shows the secondary emotions; self-validation is how you stop adding them."
+    }
+  ],
+  "emotion-regulation/self-validation": [
+    {
+      "from": "emotion-regulation/myths-emotions",
+      "relation": "pairs_with",
+      "note": "Myths like \"feelings are weakness\" are what self-validation pushes against in the moment."
+    },
+    {
+      "from": "emotion-regulation/recognizing-your-emotions",
+      "relation": "pairs_with",
+      "note": "Self-validation targets the harsh secondary emotions this analysis exposes."
+    }
+  ],
+  "emotion-regulation/stop": [
+    {
+      "from": "emotion-regulation/balancing-emotional-urges",
+      "relation": "if_condition",
+      "note": "STOP buys the pause needed to check whether the urge is effective."
+    },
+    {
+      "from": "interpersonal-effectiveness/fast",
+      "relation": "if_condition",
+      "note": "The source recommends pausing with STOP, then using wise mind, to tell honesty from reactivity."
+    },
+    {
+      "from": "interpersonal-effectiveness/give",
+      "relation": "if_condition",
+      "note": "The source advises grounding with STOP first; GIVE works better when your nervous system is settled."
+    },
+    {
+      "from": "interpersonal-effectiveness/resistance-and-conflict",
+      "relation": "if_condition",
+      "note": "Pause and step back before re-engaging."
     }
   ],
   "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights": [
@@ -282,6 +496,11 @@
     }
   ],
   "interpersonal-effectiveness/dear-man": [
+    {
+      "from": "emotion-regulation/coping-ahead",
+      "relation": "pairs_with",
+      "note": "For a dreaded conversation, the skill to rehearse is often a DEAR MAN script."
+    },
     {
       "from": "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights",
       "relation": "pairs_with",
@@ -357,6 +576,11 @@
   ],
   "interpersonal-effectiveness/give": [
     {
+      "from": "emotion-regulation/stop",
+      "relation": "de_escalates_to",
+      "note": "If the trigger is a person, proceed mindfully into the conversation with GIVE."
+    },
+    {
       "from": "interpersonal-effectiveness/dear-man",
       "relation": "pairs_with",
       "note": "GIVE keeps the delivery warm; together they get the request and keep the relationship."
@@ -384,6 +608,11 @@
   ],
   "interpersonal-effectiveness/interpersonal-boundaries": [
     {
+      "from": "emotion-regulation/problem-solving",
+      "relation": "if_condition",
+      "note": "The source lists assertive boundary-setting among the alternatives."
+    },
+    {
       "from": "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights",
       "relation": "pairs_with",
       "note": "The right to set boundaries is put into practice on the boundaries page."
@@ -400,6 +629,11 @@
     }
   ],
   "interpersonal-effectiveness/listening-and-validation": [
+    {
+      "from": "emotion-regulation/self-validation",
+      "relation": "pairs_with",
+      "note": "The same validation, turned toward another person."
+    },
     {
       "from": "interpersonal-effectiveness/give",
       "relation": "builds_on",
@@ -497,6 +731,16 @@
     }
   ],
   "mindfulness/describe-your-emotions": [
+    {
+      "from": "emotion-regulation/recognizing-your-emotions",
+      "relation": "builds_on",
+      "note": "Describing emotions names the feeling; this page widens the lens to context, interpretation, urges, and outcomes."
+    },
+    {
+      "from": "emotion-regulation/self-validation",
+      "relation": "builds_on",
+      "note": "The acknowledging step is naming the emotion plainly, without judgment."
+    },
     {
       "from": "mindfulness/internal-vs-external-events",
       "relation": "pairs_with",
@@ -630,6 +874,11 @@
   ],
   "mindfulness/mindfulness-of-negative-judgments": [
     {
+      "from": "emotion-regulation/emotions-cognitive-vulnerability",
+      "relation": "pairs_with",
+      "note": "All-or-nothing self-labels are the automatic judgments that page teaches you to catch."
+    },
+    {
       "from": "mindfulness/letting-go",
       "relation": "builds_on",
       "note": "Takes the judgments M9 taught you to notice and reframes them into non-judgmental observation."
@@ -640,6 +889,16 @@
       "from": "distress-tolerance/grounding",
       "relation": "pairs_with",
       "note": "Grounding is applied Observing; practicing Observing when calm makes it easier to notice when you need to ground."
+    },
+    {
+      "from": "emotion-regulation/emotion-exposure",
+      "relation": "builds_on",
+      "note": "Sitting with the emotion is nonjudgmental observation aimed at a feeling and its body sensations."
+    },
+    {
+      "from": "emotion-regulation/stop",
+      "relation": "builds_on",
+      "note": "The O step is nonjudgmental observing applied mid-reaction."
     },
     {
       "from": "mindfulness/internal-vs-external-events",
@@ -668,6 +927,11 @@
     }
   ],
   "mindfulness/thought-defusion": [
+    {
+      "from": "emotion-regulation/emotions-cognitive-vulnerability",
+      "relation": "contrasts_with",
+      "note": "This page disputes a distorted thought; defusion steps back from it without arguing. Choose by whether the thought responds to evidence."
+    },
     {
       "from": "mindfulness/letting-go",
       "relation": "alternative_to",
@@ -704,6 +968,16 @@
       "from": "distress-tolerance/willingness-vs-willfulness",
       "relation": "pairs_with",
       "note": "Consult Wise Mind to check that the willing solution you've chosen actually feels right."
+    },
+    {
+      "from": "emotion-regulation/myths-emotions",
+      "relation": "builds_on",
+      "note": "The source recommends evaluating each belief from wise mind."
+    },
+    {
+      "from": "emotion-regulation/stop",
+      "relation": "builds_on",
+      "note": "Proceeding mindfully asks what wise mind would choose."
     },
     {
       "from": "interpersonal-effectiveness/barriers-to-interpersonal-effectiveness",
