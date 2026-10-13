@@ -2,7 +2,7 @@
 id: mindfulness/mental-noting
 title: Mental Noting
 module: mindfulness
-card_no: M5
+page_no: M5
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/mental-noting/
 type: skill
 category: thought-awareness

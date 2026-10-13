@@ -10,7 +10,7 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 
 **Why:** Building Distress Tolerance exposed a gap — there is no way to say "Grounding *builds on* Observing" from Grounding's side. The only workaround was `pairs_with`, which understates a real dependency. Distress Tolerance already has 5 dangling cross-module edges into Mindfulness that want this direction.
 
-**Trigger:** Do it when building the **Mindfulness** module (those foundation cards — Observing, Wise Mind, Mindful Breathing — come into existence then, and the cross-module edges resolve at the same time).
+**Trigger:** Do it when building the **Mindfulness** module (those foundation pages — Observing, Wise Mind, Mindful Breathing — come into existence then, and the cross-module edges resolve at the same time).
 
 ## 2. Watch for missing ramp categories — open
 
@@ -22,9 +22,9 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 
 ## 3. Decide the data-vs-delivery contract — open
 
-**What:** Decide how much of the client's *delivery* is deterministic (rendered straight from card + edge `note`) vs. generated per-person (an LLM writing situation-specific, empathic wording on top of the graph).
+**What:** Decide how much of the client's *delivery* is deterministic (rendered straight from page + edge `note`) vs. generated per-person (an LLM writing situation-specific, empathic wording on top of the graph).
 
-**Why:** In a live crawl the graph supplied the skills (Self-Soothing, ACCEPTS→Contributing, RESISTT→Reframe) but the empathic sentence tying them to the person's exact situation was generated on top, not stored in a card. That seam is the core architecture question for the eventual web app: a "dumb" client shows the card; a "smart" client generates the delivery. The graph must stay the source of truth for *which skill and why*; clients must not invent skills the graph doesn't contain.
+**Why:** In a live crawl the graph supplied the skills (Self-Soothing, ACCEPTS→Contributing, RESISTT→Reframe) but the empathic sentence tying them to the person's exact situation was generated on top, not stored in a page. That seam is the core architecture question for the eventual web app: a "dumb" client shows the page; a "smart" client generates the delivery. The graph must stay the source of truth for *which skill and why*; clients must not invent skills the graph doesn't contain.
 
 **Trigger:** When starting the web app / client work.
 
@@ -36,16 +36,16 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 
 ## 5. Mindfulness "What"/"How" skills missing from the graph — open
 
-**What:** Participate and the three "How" skills (Nonjudgmentally, One-mindfully, Effectively) have no graph cards, though the flash card deck covers them.
+**What:** Participate and the three "How" skills (Nonjudgmentally, One-mindfully, Effectively) have no graph pages, though the flash card deck covers them.
 
-**Why:** It's unclear whether the source site lacks them or the M1–M10 fetch missed its overview page. If the site lacks them, decide whether a non-site source (the deck) may back a graph card.
+**Why:** It's unclear whether the source site lacks them or the M1–M10 fetch missed its overview page. If the site lacks them, decide whether a non-site source (the deck) may back a graph page.
 
 **Trigger:** Next session with network access to the source site. Procedure and findings: `methodology/investigations/mindfulness-what-how-skills.md`.
 
 ## 6. Integrate deck flashcards into the graph — open
 
-**What:** Give each deck card one action (supplement an existing card, new node, hub, or defer) and wire supplements in via a generated `supplements.json`.
+**What:** Give each deck card one action (supplement an existing page, new node, hub, or defer) and wire supplements in via a generated `supplements.json`.
 
-**Why:** Deck cards 001–015 overlap the Mindfulness graph unevenly: most add practices to existing cards, three teach skills the graph lacks.
+**Why:** Deck cards 001–015 overlap the Mindfulness graph unevenly: most add practices to existing pages, three teach skills the graph lacks.
 
 **Trigger:** After the What/How investigation (§5). Proposal and per-card dispositions: `methodology/deck_integration.md`.

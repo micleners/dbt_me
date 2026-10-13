@@ -2,7 +2,7 @@
 id: mindfulness/wise-mind
 title: Wise Mind
 module: mindfulness
-card_no: M8
+page_no: M8
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/wise-mind/
 type: concept
 category: integration

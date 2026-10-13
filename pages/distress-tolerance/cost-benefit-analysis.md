@@ -2,7 +2,7 @@
 id: distress-tolerance/cost-benefit-analysis
 title: Cost Benefit Analysis
 module: distress-tolerance
-card_no: T1
+page_no: T1
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/cost-benefit-analysis/
 type: decision-point
 category: tolerance-building

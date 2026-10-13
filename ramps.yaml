@@ -1,9 +1,9 @@
 # Entry ramps — how you actually arrive at the web.
 # Each ramp matches an opening ("what's going on") and points into the graph.
-# The crawler picks a ramp, then follows the cards' own typed edges from there.
+# The crawler picks a ramp, then follows the pages' own typed edges from there.
 #
 # kind: felt-state | situation | goal
-# edges[].to is a card id; primary=true marks the first suggestion to surface.
+# edges[].to is a page id; primary=true marks the first suggestion to surface.
 
 ramps:
   # ---------- FELT STATES ----------

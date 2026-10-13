@@ -2,7 +2,7 @@
 id: distress-tolerance/actions-based-on-values
 title: Actions Based on Values
 module: distress-tolerance
-card_no: T9
+page_no: T9
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/actions-based-on-values/
 type: skill
 category: reality-acceptance

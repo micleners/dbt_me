@@ -2,7 +2,7 @@
 id: mindfulness/mindfulness-of-negative-judgments
 title: Mindfulness of Negative Judgments
 module: mindfulness
-card_no: M9
+page_no: M9
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/mindfulness-of-negative-judgments/
 type: skill
 category: judgment

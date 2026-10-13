@@ -2,7 +2,7 @@
 id: distress-tolerance/grounding
 title: Grounding
 module: distress-tolerance
-card_no: T5
+page_no: T5
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/grounding/
 type: skill
 category: crisis-survival

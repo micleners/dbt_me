@@ -2,7 +2,7 @@
 id: mindfulness/describe-your-emotions
 title: Describe Your Emotions
 module: mindfulness
-card_no: M4
+page_no: M4
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/describe-your-emotions/
 type: skill
 category: emotion-awareness

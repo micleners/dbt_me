@@ -2,7 +2,7 @@
 id: distress-tolerance/radical-acceptance
 title: Radical Acceptance
 module: distress-tolerance
-card_no: T7
+page_no: T7
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/radical-acceptance/
 type: skill
 category: reality-acceptance

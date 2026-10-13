@@ -2,7 +2,7 @@
 id: mindfulness/observing
 title: Observing
 module: mindfulness
-card_no: M1
+page_no: M1
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/observing/
 type: skill
 category: core-attention

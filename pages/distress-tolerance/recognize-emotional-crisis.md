@@ -2,7 +2,7 @@
 id: distress-tolerance/recognize-emotional-crisis
 title: Recognize Emotional Crisis
 module: distress-tolerance
-card_no: T2
+page_no: T2
 source_url: https://dialecticalbehaviortherapy.com/emotional-regulation/recognizing-signs-emotional-crisis/
 type: skill
 category: crisis-survival

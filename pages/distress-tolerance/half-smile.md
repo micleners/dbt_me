@@ -2,7 +2,7 @@
 id: distress-tolerance/half-smile
 title: Half Smile
 module: distress-tolerance
-card_no: T11
+page_no: T11
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/half-smile/
 type: skill
 category: crisis-survival

@@ -2,7 +2,7 @@
 id: mindfulness/internal-vs-external-events
 title: Internal vs. External Events
 module: mindfulness
-card_no: M3
+page_no: M3
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/internal-vs-external-events/
 type: skill
 category: awareness-balance

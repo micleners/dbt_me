@@ -2,7 +2,7 @@
 id: distress-tolerance/tipp
 title: TIPP
 module: distress-tolerance
-card_no: T10
+page_no: T10
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/tipp/
 type: skill
 category: crisis-survival

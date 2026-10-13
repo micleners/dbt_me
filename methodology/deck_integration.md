@@ -5,15 +5,15 @@ Status: **open**. Linked from `methodology/system_enhancement.md` §6. Depends o
 ## Model
 
 - Treat the deck like the site: `supplemental_dbt_flashcards/` is the deck's source layer, as `raw/` is the site's.
-- Never edit a site-sourced card's body with deck content. Keep provenance separable.
+- Never edit a site-sourced page's body with deck content. Keep provenance separable.
 - Give each deck card exactly one integration action:
 
 | Action | Use when | Result |
 |---|---|---|
-| `supplement` | A graph card already teaches the skill; the deck adds practices or angles. | Deck file links to that card. Clients offer it as extra practice. |
-| `new-node` | The deck teaches a skill the graph lacks, and a ramp could plausibly land on it. | New graph card authored from the deck file. |
-| `hub` | Overview card grouping other skills. | New `type: concept` card; members point to it with `part_of`. |
-| `defer` | The matching card is in an unbuilt module. | Record target now; resolve when the module is built. |
+| `supplement` | A graph page already teaches the skill; the deck adds practices or angles. | Deck file links to that page. Clients offer it as extra practice. |
+| `new-node` | The deck teaches a skill the graph lacks, and a ramp could plausibly land on it. | New graph page authored from the deck file. |
+| `hub` | Overview deck card grouping other skills. | New `type: concept` page; members point to it with `part_of`. |
+| `defer` | The matching page is in an unbuilt module. | Record target now; resolve when the module is built. |
 
 - Choose `new-node` only for a distinct skill. A new practice variant of an existing skill is a `supplement`.
 
@@ -48,14 +48,14 @@ Totals: 9 supplement, 3 new-node, 2 hub, 1 defer.
      target: mindfulness/observing
    ```
 2. Extend `build.py`:
-   - Validate `supplement` targets resolve to real cards. Allow `defer` targets in unbuilt modules.
-   - Generate `supplements.json`: graph card id → list of deck file paths. Never hand-edited.
+   - Validate `supplement` targets resolve to real pages. Allow `defer` targets in unbuilt modules.
+   - Generate `supplements.json`: graph page id → list of deck file paths. Never hand-edited.
    - Deck files stay out of the node set and the 3–6 edge guardrail.
 3. Extend `SCHEMA.md` for deck-sourced nodes:
    - `source_url` optional when `source: deck` and `deck_card_no` are set.
    - Continue module numbering (M11, M12, ...).
-   - The deck file is the source record, as a `raw/` page is for site cards.
-4. Add a `dbt-conversation` rule: when delivering a card, offer its supplements as optional extra practices.
+   - The deck file is the source record, as a `raw/` page is for site pages.
+4. Add a `dbt-conversation` rule: when delivering a page, offer its supplements as optional extra practices.
 5. Add the `integration` block to the `dbt-flashcard-ingest` skill's frontmatter template and steps.
 
 ## Open decisions
@@ -63,7 +63,7 @@ Totals: 9 supplement, 3 new-node, 2 hub, 1 defer.
 - **Investigation outcome** changes 001, 004, 005:
   - Site overview teaches What/How → hubs are site-sourced; 001 and 005 become `supplement`.
   - Site has a Participate page → Participate is site-sourced; 004 becomes `supplement`.
-  - Site lacks them → deck must source those cards; resolve `system_enhancement.md` §5.
+  - Site lacks them → deck must source those pages; resolve `system_enhancement.md` §5.
 - **Hub guardrail:** hubs get mostly incoming `part_of` edges. Either exempt `type: concept` from the 3–6 rule (recommended) or give hubs outgoing edges (e.g. what-skills `pairs_with` how-skills).
 - **003 Describe and 007 One-mindfully:** `supplement` as proposed, or `new-node` under the hubs to mirror Linehan's What/How structure.
 

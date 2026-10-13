@@ -2,7 +2,7 @@
 id: distress-tolerance/accepts
 title: ACCEPTS
 module: distress-tolerance
-card_no: T12
+page_no: T12
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/accepts/
 type: skill
 category: crisis-survival

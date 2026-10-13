@@ -2,7 +2,7 @@
 id: mindfulness/mental-body-scan
 title: Mental Body Scan
 module: mindfulness
-card_no: M2
+page_no: M2
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/mental-body-scan/
 type: skill
 category: body-awareness

@@ -2,7 +2,7 @@
 id: mindfulness/letting-go
 title: Letting Go of Judgments
 module: mindfulness
-card_no: M10
+page_no: M10
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/letting-go/
 type: skill
 category: judgment

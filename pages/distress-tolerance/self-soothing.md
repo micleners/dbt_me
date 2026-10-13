@@ -2,7 +2,7 @@
 id: distress-tolerance/self-soothing
 title: Self Soothing
 module: distress-tolerance
-card_no: T8
+page_no: T8
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/self-soothing/
 type: skill
 category: crisis-survival

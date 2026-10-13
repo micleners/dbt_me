@@ -2,7 +2,7 @@
 id: mindfulness/thought-defusion
 title: Thought Defusion
 module: mindfulness
-card_no: M6
+page_no: M6
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/thought-defusion/
 type: skill
 category: defusion

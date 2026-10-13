@@ -2,7 +2,7 @@
 id: distress-tolerance/resistt
 title: RESISTT Technique
 module: distress-tolerance
-card_no: T4
+page_no: T4
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/resistt/
 type: skill
 category: crisis-survival

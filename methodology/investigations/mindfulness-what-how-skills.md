@@ -11,7 +11,7 @@ Status: **open**. Linked from `methodology/system_enhancement.md` §5.
 
 ## Known so far
 
-- The flash card deck covers all six (`supplemental_dbt_flashcards/mindfulness/001`–`008`). Participate has no graph card at all.
+- The flash card deck covers all six (`supplemental_dbt_flashcards/mindfulness/001`–`008`). Participate has no graph page at all.
 - The cached pages' previous/next links chain M1 → M10 with no gaps, and M10 has no "next". The exercise list is complete at 10, and none of them is Participate.
 - "Participate", "What skills" and "How skills" appear in no file under `raw/mindfulness/`.
 - **Never cached:** the Mindfulness overview page. M1 links back to it as `https://dialecticalbehaviortherapy.com/?page_id=8` (probably `/mindfulness/`). This is the most likely place for the What/How skills.
@@ -26,9 +26,9 @@ Status: **open**. Linked from `methodology/system_enhancement.md` §5.
 
 ## Outcomes
 
-- **Overview teaches What/How:** cache it as `raw/mindfulness/M00-overview.md` (with `source_url` + `fetched` frontmatter). Then decide whether it becomes a hub card or `## Notes` material on M1. A hub card needs a new `card_no` scheme, so log that decision in `system_enhancement.md`.
-- **Separate Participate (or What/How) page exists:** this is a missed fetch. Cache it, build the card, and update the M-count in `CLAUDE.md` and `module_fetch.md`.
-- **Site doesn't cover them:** close this file as "not on source site". Graph cards for Participate and the How skills then need a source other than the site. Decide in `system_enhancement.md` §5 whether the deck can be that source.
+- **Overview teaches What/How:** cache it as `raw/mindfulness/M00-overview.md` (with `source_url` + `fetched` frontmatter). Then decide whether it becomes a hub page or `## Notes` material on M1. A hub page needs a new `page_no` scheme, so log that decision in `system_enhancement.md`.
+- **Separate Participate (or What/How) page exists:** this is a missed fetch. Cache it, build the page, and update the M-count in `CLAUDE.md` and `module_fetch.md`.
+- **Site doesn't cover them:** close this file as "not on source site". Graph pages for Participate and the How skills then need a source other than the site. Decide in `system_enhancement.md` §5 whether the deck can be that source.
 
 ## Result
 

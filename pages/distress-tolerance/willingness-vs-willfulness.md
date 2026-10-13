@@ -2,7 +2,7 @@
 id: distress-tolerance/willingness-vs-willfulness
 title: Willingness vs. Willfulness
 module: distress-tolerance
-card_no: T6
+page_no: T6
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/willingness-vs-willfulness/
 type: skill
 category: reality-acceptance

@@ -2,7 +2,7 @@
 id: distress-tolerance/distracting-activities
 title: Distracting Activities
 module: distress-tolerance
-card_no: T3
+page_no: T3
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/distracting-activities/
 type: skill
 category: crisis-survival

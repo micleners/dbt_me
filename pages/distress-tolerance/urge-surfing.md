@@ -2,7 +2,7 @@
 id: distress-tolerance/urge-surfing
 title: Urge Surfing
 module: distress-tolerance
-card_no: T13
+page_no: T13
 source_url: https://dialecticalbehaviortherapy.com/distress-tolerance/urge-surfing/
 type: skill
 category: crisis-survival

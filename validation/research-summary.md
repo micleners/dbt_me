@@ -2,7 +2,7 @@
 
 Date: 2026-09-02
 
-External research to pressure-test the `SCHEMA.md` data model (typed-edge graph of DBT skill cards, crawled from an entry ramp toward a suggestion). Verdict: the structure holds up; the research produced three additive guardrails, not a redesign.
+External research to pressure-test the `SCHEMA.md` data model (typed-edge graph of DBT skill pages, crawled from an entry ramp toward a suggestion). Verdict: the structure holds up; the research produced three additive guardrails, not a redesign.
 
 ## Verdict
 
@@ -14,11 +14,11 @@ External research to pressure-test the `SCHEMA.md` data model (typed-edge graph 
 
 ## Refinements adopted from the research
 
-1. **"3–6 outbound edges per card" authoring guardrail.** Typed-link (Zettelkasten) practitioners converged on this: fewer than 3 = the card is orphaned; more than 6 = the card is not atomic. Use as a signal to split a card or to find missing pointers.
+1. **"3–6 outbound edges per page" authoring guardrail.** Typed-link (Zettelkasten) practitioners converged on this: fewer than 3 = the page is orphaned; more than 6 = the page is not atomic. Use as a signal to split a page or to find missing pointers.
 
 2. **Mandatory `note` ("why") on every edge.** Best practice is to briefly explain *why* two notes are linked, and to "pick the relationship that is most true, not the most generic." Guards against every edge collapsing into a generic relation.
 
-3. **Plan for backlinks / reverse traversal.** Clinical-pathway graphs distinguish state / decision / action nodes and rely on two-way navigation; Zettelkasten stresses two-way linking. Keep edges stored on the card (local authoring) and add a build step that computes a reverse (backlink) index, rather than moving to a central `edges.yaml`.
+3. **Plan for backlinks / reverse traversal.** Clinical-pathway graphs distinguish state / decision / action nodes and rely on two-way navigation; Zettelkasten stresses two-way linking. Keep edges stored on the page (local authoring) and add a build step that computes a reverse (backlink) index, rather than moving to a central `edges.yaml`.
 
 ## Sources
 

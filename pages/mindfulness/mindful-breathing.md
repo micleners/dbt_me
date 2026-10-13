@@ -2,7 +2,7 @@
 id: mindfulness/mindful-breathing
 title: Mindful Breathing
 module: mindfulness
-card_no: M7
+page_no: M7
 source_url: https://dialecticalbehaviortherapy.com/mindfulness/mindful-breathing/
 type: skill
 category: core-attention
