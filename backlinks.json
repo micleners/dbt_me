@@ -136,6 +136,16 @@
       "from": "distress-tolerance/willingness-vs-willfulness",
       "relation": "pairs_with",
       "note": "You radically accept the facts first; willingness is the flexible stance you then take toward them."
+    },
+    {
+      "from": "interpersonal-effectiveness/fast",
+      "relation": "if_condition",
+      "note": "The source points to Radical Acceptance for guilt or shame after owning a mistake."
+    },
+    {
+      "from": "interpersonal-effectiveness/give",
+      "relation": "if_condition",
+      "note": "The source points to Radical Acceptance when mutual respect is absent and can't be built."
     }
   ],
   "distress-tolerance/recognize-emotional-crisis": [
@@ -245,6 +255,247 @@
       "note": "You must accept the facts before you can willingly, flexibly work with them."
     }
   ],
+  "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights": [
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness",
+      "relation": "pairs_with",
+      "note": "The scripts supply the \"I think / I feel / I want\" phrasing this page recommends over \"You are...\"."
+    },
+    {
+      "from": "interpersonal-effectiveness/trust-in-relationships",
+      "relation": "pairs_with",
+      "note": "An \"I feel...\" statement is a ready way to voice the hard truth the honesty step asks for."
+    }
+  ],
+  "interpersonal-effectiveness/barriers-to-interpersonal-effectiveness": [
+    {
+      "from": "interpersonal-effectiveness/communication-styles",
+      "relation": "pairs_with",
+      "note": "The \"old patterns\" barrier is these passive and aggressive styles carried over from upbringing and past relationships."
+    }
+  ],
+  "interpersonal-effectiveness/communication-styles": [
+    {
+      "from": "interpersonal-effectiveness/barriers-to-interpersonal-effectiveness",
+      "relation": "pairs_with",
+      "note": "The \"old patterns\" barrier is the passive and aggressive styles described there."
+    }
+  ],
+  "interpersonal-effectiveness/dear-man": [
+    {
+      "from": "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights",
+      "relation": "pairs_with",
+      "note": "The \"I feel\" and \"I want\" scripts are ready phrasing for DEAR MAN's Express and Assert steps."
+    },
+    {
+      "from": "interpersonal-effectiveness/fast",
+      "relation": "pairs_with",
+      "note": "DEAR MAN pursues the objective; FAST makes sure you don't trade away self-respect to get it."
+    },
+    {
+      "from": "interpersonal-effectiveness/give",
+      "relation": "contrasts_with",
+      "note": "The source frames GIVE against DEAR MAN; DEAR MAN leads with assertiveness, GIVE with kindness and connection."
+    },
+    {
+      "from": "interpersonal-effectiveness/interpersonal-boundaries",
+      "relation": "if_condition",
+      "note": "DEAR MAN structures the direct statement of a boundary."
+    },
+    {
+      "from": "interpersonal-effectiveness/modulating-intensity",
+      "relation": "pairs_with",
+      "note": "Set the intensity first, then deliver the request with DEAR MAN."
+    },
+    {
+      "from": "interpersonal-effectiveness/resistance-and-conflict",
+      "relation": "pairs_with",
+      "note": "Repeating your point is DEAR MAN's \"broken record\" under the Mindful letter."
+    },
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness",
+      "relation": "alternative_to",
+      "note": "DEAR MAN packs the same describe, express, ask, negotiate sequence into a memorable acronym."
+    }
+  ],
+  "interpersonal-effectiveness/fast": [
+    {
+      "from": "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights",
+      "relation": "pairs_with",
+      "note": "The rights to decline without guilt and set boundaries are what FAST's No apologies rests on."
+    },
+    {
+      "from": "interpersonal-effectiveness/communication-styles",
+      "relation": "if_condition",
+      "note": "FAST targets the habit of giving up self-respect to keep the peace."
+    },
+    {
+      "from": "interpersonal-effectiveness/dear-man",
+      "relation": "pairs_with",
+      "note": "FAST keeps your self-respect intact while DEAR MAN pursues the objective."
+    },
+    {
+      "from": "interpersonal-effectiveness/give",
+      "relation": "pairs_with",
+      "note": "The source pairs GIVE with FAST to hold a boundary calmly when the other person is rude or aggressive."
+    },
+    {
+      "from": "interpersonal-effectiveness/interpersonal-boundaries",
+      "relation": "pairs_with",
+      "note": "FAST keeps you from apologizing for or abandoning a boundary under pressure."
+    },
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness-part-2",
+      "relation": "pairs_with",
+      "note": "FAST's \"Stick to your values\" and \"No apologies\" carry this page's refusal and values skills into the moment."
+    },
+    {
+      "from": "interpersonal-effectiveness/trust-in-relationships",
+      "relation": "pairs_with",
+      "note": "FAST's Truthful letter is the honesty step applied when you're standing up for yourself."
+    }
+  ],
+  "interpersonal-effectiveness/give": [
+    {
+      "from": "interpersonal-effectiveness/dear-man",
+      "relation": "pairs_with",
+      "note": "GIVE keeps the delivery warm; together they get the request and keep the relationship."
+    },
+    {
+      "from": "interpersonal-effectiveness/fast",
+      "relation": "contrasts_with",
+      "note": "FAST protects your self-respect; GIVE protects the relationship. Lead with the one that matters more here."
+    },
+    {
+      "from": "interpersonal-effectiveness/listening-and-validation",
+      "relation": "prerequisite_of",
+      "note": "GIVE's Interested and Validate letters are these listening and validation skills in compact form."
+    },
+    {
+      "from": "interpersonal-effectiveness/modulating-intensity",
+      "relation": "if_condition",
+      "note": "A gentler presentation is what GIVE provides."
+    },
+    {
+      "from": "interpersonal-effectiveness/resistance-and-conflict",
+      "relation": "contrasts_with",
+      "note": "These skills hold your position against pushback; GIVE softens delivery to protect the relationship. Choose by which matters more right now."
+    }
+  ],
+  "interpersonal-effectiveness/interpersonal-boundaries": [
+    {
+      "from": "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights",
+      "relation": "pairs_with",
+      "note": "The right to set boundaries is put into practice on the boundaries page."
+    },
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness-part-2",
+      "relation": "pairs_with",
+      "note": "Saying no assertively is boundary-setting in action."
+    },
+    {
+      "from": "interpersonal-effectiveness/trust-in-relationships",
+      "relation": "pairs_with",
+      "note": "Deciding who has earned your honesty is the same reciprocal judgment as opening your boundaries."
+    }
+  ],
+  "interpersonal-effectiveness/listening-and-validation": [
+    {
+      "from": "interpersonal-effectiveness/give",
+      "relation": "builds_on",
+      "note": "Interested and Validate are the listening and validation skills in compact form."
+    },
+    {
+      "from": "interpersonal-effectiveness/resistance-and-conflict",
+      "relation": "builds_on",
+      "note": "Skill one applies validation to someone who is resisting you."
+    },
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness-part-2",
+      "relation": "pairs_with",
+      "note": "Getting information relies on the same genuine questions and curiosity listening practices."
+    },
+    {
+      "from": "interpersonal-effectiveness/trust-in-relationships",
+      "relation": "builds_on",
+      "note": "The understanding-and-respect step uses reflecting the other person's view without judgment."
+    }
+  ],
+  "interpersonal-effectiveness/modulating-intensity": [
+    {
+      "from": "interpersonal-effectiveness/dear-man",
+      "relation": "if_condition",
+      "note": "Weigh urgency against their vulnerability before setting the Assert step's strength."
+    }
+  ],
+  "interpersonal-effectiveness/resistance-and-conflict": [
+    {
+      "from": "interpersonal-effectiveness/assertiveness-scripts-and-interpersonal-rights",
+      "relation": "if_condition",
+      "note": "Resistance skills keep the exchange going when a well-phrased statement meets opposition."
+    },
+    {
+      "from": "interpersonal-effectiveness/dear-man",
+      "relation": "if_condition",
+      "note": "Validating their view and asking for specifics extend the Mindful and Negotiate steps."
+    },
+    {
+      "from": "interpersonal-effectiveness/listening-and-validation",
+      "relation": "pairs_with",
+      "note": "Validating the other person's view is the first resistance skill."
+    }
+  ],
+  "interpersonal-effectiveness/skills-of-assertiveness": [
+    {
+      "from": "interpersonal-effectiveness/barriers-to-interpersonal-effectiveness",
+      "relation": "if_condition",
+      "note": "Part 1's \"know your priorities\" step is the remedy for the identifying-needs barrier."
+    },
+    {
+      "from": "interpersonal-effectiveness/communication-styles",
+      "relation": "prerequisite_of",
+      "note": "Knowing your default style shows what assertiveness has to replace."
+    },
+    {
+      "from": "interpersonal-effectiveness/listening-and-validation",
+      "relation": "contrasts_with",
+      "note": "Assertiveness voices your side; listening and validation acknowledges theirs. Effective communication needs both."
+    },
+    {
+      "from": "interpersonal-effectiveness/modulating-intensity",
+      "relation": "builds_on",
+      "note": "Calibrates how strongly to ask once you know what you're asking for."
+    },
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness-part-2",
+      "relation": "builds_on",
+      "note": "Completes the six-skill framework that Part 1 starts."
+    }
+  ],
+  "interpersonal-effectiveness/skills-of-assertiveness-part-2": [
+    {
+      "from": "interpersonal-effectiveness/interpersonal-boundaries",
+      "relation": "pairs_with",
+      "note": "Saying no without damaging the relationship is the most common boundary in practice."
+    },
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness",
+      "relation": "prerequisite_of",
+      "note": "Part 2 completes the six-skill sequence with getting information, saying no, and acting on values."
+    }
+  ],
+  "interpersonal-effectiveness/trust-in-relationships": [
+    {
+      "from": "interpersonal-effectiveness/interpersonal-boundaries",
+      "relation": "pairs_with",
+      "note": "Opening boundaries to people who trust you with theirs goes hand in hand with judging who has earned your trust."
+    },
+    {
+      "from": "interpersonal-effectiveness/listening-and-validation",
+      "relation": "pairs_with",
+      "note": "Reflecting someone's view without judgment is how trust's \"understanding and respect\" step is practiced."
+    }
+  ],
   "mindfulness/describe-your-emotions": [
     {
       "from": "mindfulness/internal-vs-external-events",
@@ -352,6 +603,11 @@
   ],
   "mindfulness/mindful-breathing": [
     {
+      "from": "interpersonal-effectiveness/barriers-to-interpersonal-effectiveness",
+      "relation": "if_condition",
+      "note": "The page's remedy for overwhelming emotions is noticing body signs and mindful diaphragmatic breathing."
+    },
+    {
       "from": "mindfulness/mental-body-scan",
       "relation": "pairs_with",
       "note": "Both relax through the body; the scan opens with settling breaths and shares the same calming aim."
@@ -448,6 +704,16 @@
       "from": "distress-tolerance/willingness-vs-willfulness",
       "relation": "pairs_with",
       "note": "Consult Wise Mind to check that the willing solution you've chosen actually feels right."
+    },
+    {
+      "from": "interpersonal-effectiveness/barriers-to-interpersonal-effectiveness",
+      "relation": "if_condition",
+      "note": "The toxic-relationship barrier starts with centering in wise mind before preparing responses."
+    },
+    {
+      "from": "interpersonal-effectiveness/skills-of-assertiveness",
+      "relation": "builds_on",
+      "note": "Finding your priorities starts from wise mind, observing your feelings to see what's missing."
     },
     {
       "from": "mindfulness/describe-your-emotions",

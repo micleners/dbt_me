@@ -23,7 +23,8 @@ validation/                   External research validating the data model.
 
 - **Distress Tolerance:** 13 pages (T1–T13), 49 edges, 11 ramps.
 - **Mindfulness:** 10 pages (M1–M10), 34 edges, 6 ramps.
-- **Emotion Regulation** (E1–E12), **Interpersonal Effectiveness** (I1–I13): raw pages cached, none built. See `methodology/module_fetch.md`.
+- **Interpersonal Effectiveness:** 13 pages (I1–I13), 52 edges, 7 ramps.
+- **Emotion Regulation** (E1–E12): raw pages cached, none built. See `methodology/module_fetch.md`.
 - **Supplemental deck:** in progress, one file per card as photos arrive.
 
 ## Writing page content

@@ -63,6 +63,8 @@ ramps:
         note: Gateway — confirm the warning signs, which then branch by what you're feeling.
       - to: distress-tolerance/tipp
         note: If your body is already in alarm, down-regulate before you speak.
+      - to: interpersonal-effectiveness/give
+        note: Once calmer, say what you need with GIVE so the relationship survives the conversation.
 
   - id: ramp/harmful-behavior-urge
     kind: situation
@@ -187,3 +189,78 @@ ramps:
         note: If anxious thoughts keep gripping, create distance from them.
       - to: mindfulness/mental-body-scan
         note: Release the physical tension anxiety leaves in the body.
+
+  # ---------- INTERPERSONAL EFFECTIVENESS ----------
+  - id: ramp/swallowing-needs
+    kind: felt-state
+    cue: "Resentful because I keep saying yes, apologizing, or staying quiet about what I need."
+    edges:
+      - to: interpersonal-effectiveness/fast
+        primary: true
+        note: Stop trading self-respect for peace; no apologies for having needs.
+      - to: interpersonal-effectiveness/communication-styles
+        note: See whether a passive or passive-aggressive pattern is running the show.
+
+  - id: ramp/dreading-conversation
+    kind: felt-state
+    cue: "Dreading a conversation I need to have; I keep putting it off."
+    edges:
+      - to: interpersonal-effectiveness/barriers-to-interpersonal-effectiveness
+        primary: true
+        note: Find what's in the way (old patterns, fear, unclear needs, flooding).
+      - to: interpersonal-effectiveness/dear-man
+        note: Then script the conversation so you know what you'll say.
+
+  - id: ramp/pushback
+    kind: situation
+    cue: "I made my case and they keep arguing, deflecting, or criticizing."
+    edges:
+      - to: interpersonal-effectiveness/resistance-and-conflict
+        primary: true
+        note: Validate their view, repeat your point, ask for specifics.
+      - to: interpersonal-effectiveness/give
+        note: If the relationship matters more than the point, soften the delivery.
+
+  - id: ramp/ask-for-something
+    kind: goal
+    cue: "I want to ask someone for something and actually get heard."
+    edges:
+      - to: interpersonal-effectiveness/dear-man
+        primary: true
+        note: Describe, Express, Assert, Reinforce; stay Mindful, Appear confident, Negotiate.
+      - to: interpersonal-effectiveness/modulating-intensity
+        note: Decide first how hard to press, given urgency and their vulnerability.
+      - to: interpersonal-effectiveness/skills-of-assertiveness
+        note: If you're not sure what you want yet, start with your priorities.
+
+  - id: ramp/say-no
+    kind: goal
+    cue: "I want to say no or set a boundary without caving or feeling guilty."
+    edges:
+      - to: interpersonal-effectiveness/fast
+        primary: true
+        note: Hold the line with your values and without apologizing.
+      - to: interpersonal-effectiveness/interpersonal-boundaries
+        note: Get clear on which boundary it is and how open to be.
+      - to: interpersonal-effectiveness/skills-of-assertiveness-part-2
+        note: Decline assertively so the relationship stays intact.
+
+  - id: ramp/keep-relationship
+    kind: goal
+    cue: "I need to raise a problem with someone I care about without damaging things."
+    edges:
+      - to: interpersonal-effectiveness/give
+        primary: true
+        note: Gentle, Interested, Validate, Easy manner.
+      - to: interpersonal-effectiveness/listening-and-validation
+        note: Make sure they feel heard before you ask to be heard.
+
+  - id: ramp/rebuild-trust
+    kind: goal
+    cue: "I want relationships I can trust, or to be more trustworthy myself."
+    edges:
+      - to: interpersonal-effectiveness/trust-in-relationships
+        primary: true
+        note: Honesty, understanding and respect, consistency.
+      - to: interpersonal-effectiveness/interpersonal-boundaries
+        note: Open up at the pace the other person does.
