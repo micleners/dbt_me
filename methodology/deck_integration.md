@@ -1,6 +1,13 @@
-# Deck integration proposal
+---
+type: proposal
+status: open
+created: 2026-10-12
+updated: 2026-10-13
+linked_from: system_enhancement.md §6
+depends_on: investigations/mindfulness-what-how-skills.md
+---
 
-Status: **open**. Linked from `methodology/system_enhancement.md` §6. Depends on `methodology/investigations/mindfulness-what-how-skills.md`.
+# Deck integration proposal
 
 ## Model
 

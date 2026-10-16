@@ -1,6 +1,13 @@
-# Investigation: are the "What" and "How" skills on the source site?
+---
+type: investigation
+status: open
+created: 2026-10-12
+updated: 2026-10-13
+linked_from: system_enhancement.md §5
+blocked_on: network access to the source site
+---
 
-Status: **open**. Linked from `methodology/system_enhancement.md` §5.
+# Investigation: are the "What" and "How" skills on the source site?
 
 ## Question
 
@@ -19,7 +26,7 @@ Status: **open**. Linked from `methodology/system_enhancement.md` §5.
 
 ## Steps
 
-1. Fetch the overview page: try `https://dialecticalbehaviortherapy.com/mindfulness/`, then `https://dialecticalbehaviortherapy.com/?page_id=8`. Get raw HTML with `curl` and convert to text; the WebFetch summarizer truncates lists (see `module_fetch.md` step 1).
+1. Fetch the overview page: try `https://dialecticalbehaviortherapy.com/mindfulness/`, then `https://dialecticalbehaviortherapy.com/?page_id=8`. Get raw HTML with `curl` and convert to text; the WebFetch summarizer truncates lists (see `archive/module_fetch.md` step 1).
 2. Search the page text for: participate, observe, describe, nonjudgmental, one-mindful, effective, "what skills", "how skills".
 3. Check the site's search and sitemap (`/sitemap.xml`, `/wp-sitemap.xml`, `/?s=participate`) for a standalone Participate or What/How page in any module path.
 4. Record the result below.
@@ -27,7 +34,7 @@ Status: **open**. Linked from `methodology/system_enhancement.md` §5.
 ## Outcomes
 
 - **Overview teaches What/How:** cache it as `raw/mindfulness/M00-overview.md` (with `source_url` + `fetched` frontmatter). Then decide whether it becomes a hub page or `## Notes` material on M1. A hub page needs a new `page_no` scheme, so log that decision in `system_enhancement.md`.
-- **Separate Participate (or What/How) page exists:** this is a missed fetch. Cache it, build the page, and update the M-count in `CLAUDE.md` and `module_fetch.md`.
+- **Separate Participate (or What/How) page exists:** this is a missed fetch. Cache it, build the page, and update the M-count in `CLAUDE.md`.
 - **Site doesn't cover them:** close this file as "not on source site". Graph pages for Participate and the How skills then need a source other than the site. Decide in `system_enhancement.md` §5 whether the deck can be that source.
 
 ## Result

@@ -1,3 +1,12 @@
+---
+type: procedure
+status: archived
+created: 2026-09-02
+updated: 2026-10-16
+archived: 2026-10-16
+reason: All four site modules are built (48 pages). Reuse only if a new source module is added.
+---
+
 # Building a module
 
 Per-module build procedure, plus a prompt to run it. Read `SCHEMA.md` first; this doc assumes the data model. Module status lives in `CLAUDE.md`; cross-cutting findings go in `system_enhancement.md`.
@@ -21,7 +30,7 @@ Per-module build procedure, plus a prompt to run it. Read `SCHEMA.md` first; thi
 
 ## Prompt
 
-> Build the **`<MODULE>`** module (parent page `<PARENT_URL>`) for dbt_me. Read `CLAUDE.md`, `SCHEMA.md`, and `methodology/module_fetch.md`, then follow the pipeline exactly. Report the enumerated page list and count before fetching; skip fetching if `raw/<module>/` is already populated. Finish with what the smoke-test crawl surfaced and which edges you fixed.
+> Build the **`<MODULE>`** module (parent page `<PARENT_URL>`) for dbt_me. Read `CLAUDE.md`, `SCHEMA.md`, and `methodology/archive/module_fetch.md`, then follow the pipeline exactly. Report the enumerated page list and count before fetching; skip fetching if `raw/<module>/` is already populated. Finish with what the smoke-test crawl surfaced and which edges you fixed.
 
 Parent pages:
 - Mindfulness: https://dialecticalbehaviortherapy.com/mindfulness/

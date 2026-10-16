@@ -10,7 +10,6 @@ DBT (Dialectical Behavior Therapy, Marsha Linehan's framework) has four skills m
 |------|-----------|
 | [`SCHEMA.md`](SCHEMA.md) | The data model — nodes, typed edges, ramps, guardrails. Read first. |
 | [`CLAUDE.md`](CLAUDE.md) | Project orientation, conventions, and current status. |
-| [`methodology/module_fetch.md`](methodology/module_fetch.md) | The 9-step pipeline for building a module + a reusable prompt for the rest. |
 | [`methodology/system_enhancement.md`](methodology/system_enhancement.md) | Cross-cutting backlog (new relations, missing ramps, client architecture). |
 | [`validation/research-summary.md`](validation/research-summary.md) | External research validating the data model. |
 
@@ -23,7 +22,7 @@ ramps.yaml         entry ramps (felt-state / situation / goal)
 backlinks.json     generated reverse index (never hand-edited)
 pages/<module>/    one page (node + outgoing edges) per file
 raw/<module>/       summarized page caches with quoted excerpts (not verbatim; never re-fetched)
-methodology/       how a module is built + the enhancement backlog
+methodology/       backlog, plans, and investigations (archive/ for retired procedures)
 validation/        data-model validation research
 ```
 
@@ -37,5 +36,4 @@ Validates the graph (fails non-zero on a broken intra-module edge, a page outsid
 
 ## Status
 
-- **Distress Tolerance** — complete: 13 pages, 49 edges, 11 ramps, passing `build.py`.
-- **Mindfulness · Emotion Regulation · Interpersonal Effectiveness** — not yet built; follow `methodology/module_fetch.md`.
+All four modules are built (48 pages). Per-module counts live in `CLAUDE.md`.

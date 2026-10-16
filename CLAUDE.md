@@ -14,7 +14,7 @@ backlinks.json                Generated reverse index. Never hand-edit.
 pages/<module>/               One Markdown+YAML page per source page: node plus its edges.
 raw/<module>/                 Fetch cache: summarized pages with quoted excerpts, not verbatim. Never re-fetch.
 supplemental_dbt_flashcards/  Paraphrased notes on a physical flash card deck; outside the graph until integrated.
-methodology/                  How modules are built, plus a reusable build prompt.
+methodology/                  Backlog, plans, investigations; archive/ holds retired procedures.
 .claude/skills/               Agent skills: dbt-conversation (talking with a person), dbt-flashcard-ingest (logging deck cards).
 validation/                   External research validating the data model.
 ```

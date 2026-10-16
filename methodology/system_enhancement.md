@@ -1,16 +1,24 @@
+---
+type: backlog
+status: active
+created: 2026-09-02
+updated: 2026-10-16
+scope: Cross-cutting decisions about the data model, graph, and clients.
+---
+
 # System enhancements
 
-High-level strategies and structural improvements surfaced during the work, parked here to act on deliberately later rather than mid-task. Each is a decision or change to the *system* (the data model, the graph, the client architecture) — not a step in building any one module (that's `module_fetch.md`).
+High-level strategies and structural improvements surfaced during the work, parked here to act on deliberately later rather than mid-task. Each is a decision or change to the *system* (the data model, the graph, the client architecture) — not a step in building any one module (that was `archive/module_fetch.md`).
 
 Status legend: **open** (not started) · **planned** (has a trigger) · **done**.
 
-## 1. Add a `builds_on` relation — planned
+## 1. Add a `builds_on` relation — done
 
 **What:** Add `builds_on` to the relation vocabulary in `SCHEMA.md` as the reverse of `prerequisite_of`, so a skill can point back at the foundation it depends on.
 
 **Why:** Building Distress Tolerance exposed a gap — there is no way to say "Grounding *builds on* Observing" from Grounding's side. The only workaround was `pairs_with`, which understates a real dependency. Distress Tolerance already has 5 dangling cross-module edges into Mindfulness that want this direction.
 
-**Trigger:** Do it when building the **Mindfulness** module (those foundation pages — Observing, Wise Mind, Mindful Breathing — come into existence then, and the cross-module edges resolve at the same time).
+**Done:** in `SCHEMA.md`; used across modules.
 
 ## 2. Watch for missing ramp categories — open
 
@@ -49,3 +57,19 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 **Why:** Deck cards 001–015 overlap the Mindfulness graph unevenly: most add practices to existing pages, three teach skills the graph lacks.
 
 **Trigger:** After the What/How investigation (§5). Proposal and per-card dispositions: `methodology/deck_integration.md`.
+
+## 7. Edge cap vs. cross-module links — open
+
+**What:** Decide how the 3–6 outbound-edge guardrail treats cross-module links.
+
+**Why:** Modules built early have no links to later ones; adding them pushes pages past 6.
+
+**Trigger:** Before the cross-module linking pass. Plan: `methodology/edge_cap.md`.
+
+## 8. Scenario run-throughs — open
+
+**What:** Use example scenarios to find dead ends and missing links in the graph.
+
+**Why:** The two smoke tests at build time each found a fix; there is no repeatable version.
+
+**Trigger:** After §7. Plan: `methodology/scenario_testing.md`.
