@@ -34,4 +34,4 @@ The seven options, with their deck cards:
 
 - Same skill as T12 (`distress-tolerance/accepts`); the card is the deck's overview and index to cards 25–31.
 - The "Wise Mind" prefix links the set to `mindfulness/wise-mind`; the graph page does not use that name.
-- Cards 25–27 are logged; 28–31 are pending.
+- Cards 25–30 are logged; 31 is pending.
