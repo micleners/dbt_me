@@ -27,5 +27,5 @@ The TIPP skills are:
 
 ## Notes
 
-- Same acronym as T10 TIPP. T10 calls the last P "Progressive muscle relaxation"; this deck uses "Paired Muscle Relaxation", the name in Linehan's manual (tensing while breathing in, relaxing while breathing out). Compare with card 23 once logged.
+- Same acronym as T10 TIPP. T10 calls the last P "Progressive muscle relaxation"; this deck uses "Paired Muscle Relaxation", the name in Linehan's manual (tensing while breathing in, relaxing while breathing out). Card 23 confirms the breath pairing and runs feet to head, opposite to T10.
 - This card is an index; the steps live on cards 20–23.
