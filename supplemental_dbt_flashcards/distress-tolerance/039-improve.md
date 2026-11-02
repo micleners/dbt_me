@@ -33,4 +33,4 @@ The seven options, with their deck cards:
 - Linehan's IMPROVE the moment is a standard Distress Tolerance crisis survival skill alongside ACCEPTS and Self-Soothe; the site source has no page for it, so the graph lacks it. Candidate for a new T-page or a supplemental node if the graph ever admits deck sources.
 - Imagery overlaps the guided-imagery versions in `mindfulness/thought-defusion`; One Thing in the Moment overlaps Card 7 (`supplemental_dbt_flashcards/mindfulness/007-one-mindfully.md`).
 - Card 16 is `016-crisis-survival-skills.md`; the "skills breakdown point" again points to the deck booklet.
-- Cards 40–46 are pending.
+- Card 40 is `040-imagery-improve.md`; cards 41–46 are pending.
