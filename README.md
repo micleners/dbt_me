@@ -72,3 +72,7 @@ validation/                   external research validating the data model
 ## Status
 
 All four modules are built. Per-module counts live in [`CLAUDE.md`](CLAUDE.md). Next up: integrating the flash card deck into the graph and adding scenario tests that check real situations still route to sensible skills.
+
+## License
+
+Copyright © 2026 Michael Leners. All rights reserved. No license is granted to copy, modify, or redistribute this repository. DBT skill content belongs to its original authors; see each page's `source_url`.
