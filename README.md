@@ -1,39 +1,74 @@
 # dbt_me
 
-A traversable graph of DBT skill pages. You start from what you're feeling (a felt state, a situation, or a goal), and crawl typed links between skills to reach a concrete suggestion. The chat interface is the crawler today; a web app over the same structured data comes later. **The graph is the product; clients are interchangeable renderers on top of it.**
+[![Validate graph](https://github.com/micleners/dbt_me/actions/workflows/validate.yml/badge.svg)](https://github.com/micleners/dbt_me/actions/workflows/validate.yml)
 
-DBT (Dialectical Behavior Therapy, Marsha Linehan's framework) has four skills modules: Mindfulness, Distress Tolerance, Emotion Regulation, Interpersonal Effectiveness. Page content is sourced from https://dialecticalbehaviortherapy.com and paraphrased into pages. One source page = one page = one node.
+**A typed knowledge graph of DBT skills that you navigate from how you feel to what you can do about it.**
 
-## Start here
+DBT (Dialectical Behavior Therapy, Marsha Linehan's framework) teaches four skill modules: Mindfulness, Distress Tolerance, Emotion Regulation, and Interpersonal Effectiveness. Most DBT apps treat those skills as a reference manual or a checklist. This project models them as a graph instead: you enter from a felt state, a situation, or a goal, then follow typed links to a concrete skill and the reason it fits.
 
-| File | What it is |
-|------|-----------|
-| [`SCHEMA.md`](SCHEMA.md) | The data model — nodes, typed edges, ramps, guardrails. Read first. |
-| [`CLAUDE.md`](CLAUDE.md) | Project orientation, conventions, and current status. |
-| [`methodology/system_enhancement.md`](methodology/system_enhancement.md) | Cross-cutting backlog (new relations, missing ramps, client architecture). |
-| [`validation/research-summary.md`](validation/research-summary.md) | External research validating the data model. |
+> [!NOTE]
+> This is a personal reference project, not medical advice or a substitute for treatment. Skill content is paraphrased from [dialecticalbehaviortherapy.com](https://dialecticalbehaviortherapy.com), and each page links back to its source.
 
-## Layout
+## At a glance
 
-```
-SCHEMA.md          data model (read first)
-build.py           no-dependency validator + backlinks.json generator
-ramps.yaml         entry ramps (felt-state / situation / goal)
-backlinks.json     generated reverse index (never hand-edited)
-pages/<module>/    one page (node + outgoing edges) per file
-raw/<module>/       summarized page caches with quoted excerpts (not verbatim; never re-fetched)
-methodology/       backlog, plans, and investigations (archive/ for retired procedures)
-validation/        data-model validation research
-```
+| | |
+|---|---|
+| Pages (nodes) | 48 across all four modules |
+| Typed edges | 181, each with a required `note` explaining why it exists |
+| Entry ramps | 32 felt states, situations, and goals |
+| Dependencies | None: one Python script validates and indexes the graph |
 
-## Build
+## How it works
 
-```
-python build.py
+```mermaid
+flowchart LR
+    R["Ramp<br/>&quot;Panicking: racing heart&quot;"] -->|primary| T[TIPP]
+    R --> G[Grounding]
+    T -->|de_escalates_to| V[Actions Based on Values]
+    G -->|pairs_with| O[Observing]
 ```
 
-Validates the graph (fails non-zero on a broken intra-module edge, a page outside the 3–6 edge guardrail, or an unresolved ramp target) and regenerates `backlinks.json`. Run it after any page or ramp change.
+1. **Ramps** (`ramps.yaml`) match how people actually arrive: "panicking", "conflict with a person", "I want to ask for something". Each ramp points at a primary skill plus alternatives.
+2. **Pages** (`pages/<module>/*.md`) are one skill each: YAML frontmatter for the node and its outgoing edges, Markdown body for the practice itself.
+3. **Edges** carry one of nine relations (`escalates_to`, `de_escalates_to`, `builds_on`, `prerequisite_of`, `part_of`, `alternative_to`, `contrasts_with`, `pairs_with`, `if_condition`), so a client can explain *why* it suggests the next skill, not just *that* it does.
+4. **The build** (`build.py`) validates the graph and generates `backlinks.json`, a reverse index that lets clients traverse in both directions.
+
+The data is the product. A chat agent is the crawler today; a web app can render the same files later without changing them. The full model is in [`SCHEMA.md`](SCHEMA.md).
+
+## Quickstart
+
+```sh
+git clone git@github.com:micleners/dbt_me.git
+cd dbt_me
+python build.py           # validate the graph and regenerate backlinks.json
+python build.py --check   # validate only; fail if backlinks.json is stale (what CI runs)
+```
+
+The build fails on any edge or ramp that points at a missing page, or any page outside the 3–6 outgoing-edge guardrail. Fewer than three edges means an orphaned page; more than six means a page that should be split.
+
+## Repository layout
+
+```
+SCHEMA.md                     data model: pages, typed edges, ramps, guardrails
+build.py                      validator and backlinks.json generator (stdlib only)
+ramps.yaml                    entry ramps into the graph
+backlinks.json                generated reverse index (never hand-edited)
+pages/<module>/               one skill per file: node, edges, and practice
+raw/<module>/                 cached source summaries the pages are distilled from
+supplemental_dbt_flashcards/  notes on a physical DBT flash card deck, not yet in the graph
+methodology/                  backlog, design proposals, and investigations
+validation/                   external research validating the data model
+.claude/skills/               agent workflows for guided conversations and card ingestion
+```
+
+## How the content is maintained
+
+- **Source fidelity.** Pages keep every step, its order, and any durations from the source, and add no claims of their own. Our own connections and commentary live only in edge notes and `## Notes` sections.
+- **Two-layer content.** `raw/` caches each source page once; `pages/` distills it into the graph.
+- **Validated on every push.** GitHub Actions runs `python build.py --check`, so a broken link or a stale index can't land on `main`.
+- **Agent-assisted, human-directed.** Authoring and conversation workflows are written as Claude Code skills in `.claude/skills/`, with project conventions in [`CLAUDE.md`](CLAUDE.md).
+- **Decisions tracked in the open.** Open design questions (edge caps for cross-module links, scenario testing, deck integration) live in [`methodology/system_enhancement.md`](methodology/system_enhancement.md).
 
 ## Status
 
-All four modules are built (48 pages). Per-module counts live in `CLAUDE.md`.
+All four modules are built. Per-module counts live in [`CLAUDE.md`](CLAUDE.md). Next up: integrating the flash card deck into the graph and adding scenario tests that check real situations still route to sensible skills.
