@@ -60,6 +60,6 @@ Applies to agent-facing files: `CLAUDE.md`, `.claude/skills/`, `methodology/`.
 
 ## Workflow
 
-- Run `python build.py` after any page or ramp change. It fails on a broken intra-module edge, a page outside 3–6 edges, or an unresolved ramp target.
+- Run `python build.py` after any page or ramp change. It fails on a broken edge, a page outside 3–6 edges, or an unresolved ramp target.
 - Commit and push whenever work comes to rest, including pauses, hand-backs, and "stop here" checkpoints. Include intermediate artifacts (raw caches, progress notes). Never leave changes uncommitted while waiting.
 - Before committing, scan the changes for sensitive information about individuals. If any exists, flag it and hold off.

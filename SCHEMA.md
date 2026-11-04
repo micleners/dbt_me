@@ -95,7 +95,7 @@ Edges are stored *on the originating page* so authoring stays local — when you
 
 We resolve this with a **build step** — `python build.py` (no dependencies) — run whenever pages change. It reads all pages and emits a derived `backlinks.json` mapping each page id to its incoming edges. Authors never hand-maintain it. The crawler and any future client can then traverse in both directions cheaply. Pages remain the single source of truth; the reverse index is generated, never edited.
 
-`build.py` also validates the graph and exits non-zero on a real error: it reports unresolved edge targets (splitting expected cross-module edges from broken intra-module ones), flags any page outside the 3–6 edge guardrail, and checks that every `ramps.yaml` target resolves to a real page.
+`build.py` also validates the graph and exits non-zero on any error: an edge target that resolves to no page, a page outside the 3–6 edge guardrail, or a `ramps.yaml` target that resolves to no page. `python build.py --check` validates without writing and also fails if `backlinks.json` is stale; CI runs it on every push.
 
 ## How the crawler uses this
 

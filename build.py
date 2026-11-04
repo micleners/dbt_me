@@ -4,13 +4,13 @@
 Reads every page under pages/, validates the edge graph, and generates
 backlinks.json (the reverse index). No external dependencies.
 
-Validation performed:
-  - unresolved edge targets (split into cross-module = expected future work,
-    vs intra-module = a real broken link)
+Validation performed (any failure exits non-zero):
+  - every edge target resolves to a real page
   - the 3-6 outbound-edges authoring guardrail
   - ramp targets in ramps.yaml resolve to real pages
 
-Run: python build.py
+Run:   python build.py           validate and regenerate backlinks.json
+       python build.py --check   validate and fail if backlinks.json is stale (CI)
 """
 import json
 import re
@@ -21,9 +21,6 @@ ROOT = Path(__file__).parent
 PAGES_DIR = ROOT / "pages"
 RAMPS_FILE = ROOT / "ramps.yaml"
 OUT_FILE = ROOT / "backlinks.json"
-
-# Modules we have not built yet — edges into them are expected, not errors.
-FUTURE_MODULES = set()
 
 
 def split_frontmatter(text):
@@ -78,11 +75,8 @@ def parse_ramp_targets(path):
     return targets
 
 
-def module_of(page_id):
-    return page_id.split("/", 1)[0] if "/" in page_id else ""
-
-
 def main():
+    check_only = "--check" in sys.argv[1:]
     pages = {}
     for path in sorted(PAGES_DIR.rglob("*.md")):
         page = parse_page(path)
@@ -94,7 +88,7 @@ def main():
     ids = set(pages)
     # Sorted keys and entries keep backlinks.json byte-stable across runs.
     backlinks = {pid: [] for pid in sorted(ids)}
-    unresolved_cross, unresolved_broken = [], []
+    broken = []
 
     for pid, page in pages.items():
         for e in page["edges"]:
@@ -103,20 +97,25 @@ def main():
                 backlinks[tgt].append(
                     {"from": pid, "relation": e.get("relation"), "note": e.get("note")}
                 )
-            elif module_of(tgt) in FUTURE_MODULES:
-                unresolved_cross.append((pid, tgt))
             else:
-                unresolved_broken.append((pid, tgt))
+                broken.append((pid, tgt))
 
     for entries in backlinks.values():
         entries.sort(key=lambda b: (b["from"], b["relation"] or ""))
-    OUT_FILE.write_text(json.dumps(backlinks, indent=2), encoding="utf-8")
+    output = json.dumps(backlinks, indent=2)
+    current = OUT_FILE.read_text(encoding="utf-8") if OUT_FILE.exists() else None
+    stale = current != output
+    if not check_only:
+        OUT_FILE.write_text(output, encoding="utf-8")
 
     # ---- report ----
     print(f"Pages parsed:        {len(pages)}")
     total_edges = sum(len(c['edges']) for c in pages.values())
     print(f"Outgoing edges:      {total_edges}")
-    print(f"Backlinks written:   {OUT_FILE.name}\n")
+    if check_only:
+        print(f"Backlinks:           {OUT_FILE.name} {'STALE' if stale else 'up to date'}\n")
+    else:
+        print(f"Backlinks written:   {OUT_FILE.name}\n")
 
     print("Edge-count guardrail (3-6 per page):")
     off = False
@@ -128,16 +127,9 @@ def main():
     if not off:
         print("  all pages within 3-6")
 
-    print("\nCross-module edges (expected future work):")
-    if unresolved_cross:
-        for src, tgt in unresolved_cross:
-            print(f"  ~ {src} -> {tgt}")
-    else:
-        print("  none")
-
-    print("\nBROKEN intra-module edges (must fix):")
-    if unresolved_broken:
-        for src, tgt in unresolved_broken:
+    print("\nBroken edges:")
+    if broken:
+        for src, tgt in broken:
             print(f"  X {src} -> {tgt}")
     else:
         print("  none")
@@ -149,8 +141,9 @@ def main():
     for t in bad:
         print(f"  X ramp -> {t}")
 
-    # non-zero exit if a real error exists
-    if unresolved_broken or bad:
+    if broken or bad or off or (check_only and stale):
+        if check_only and stale:
+            print("\nbacklinks.json is stale: run `python build.py` and commit it.")
         sys.exit(1)
 
 
