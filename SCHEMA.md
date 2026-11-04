@@ -1,4 +1,4 @@
-# DBT Skills Web — Data Model
+# DBT Skills Web: Data Model
 
 A directed graph. **Pages are nodes**, **pointers are typed edges**. The edge *type* (and optional condition) is the engine that makes traversal intelligent instead of a flat wiki of backlinks.
 
@@ -17,7 +17,7 @@ dbt_me/
   backlinks.json                <- generated reverse index (never hand-edited)
 ```
 
-Pages are *distilled* from `raw/`. A page holds the crawl-relevant essentials and points at the source page (`source_url`) for full detail — we don't duplicate the entire source page into the page.
+Pages are *distilled* from `raw/`. A page holds the crawl-relevant essentials and points at the source page (`source_url`) for full detail: we don't duplicate the entire source page into the page.
 
 Modules: `mindfulness`, `distress-tolerance`, `emotion-regulation`, `interpersonal-effectiveness`.
 
@@ -43,14 +43,14 @@ edges:                             # outgoing pointers, see below
     note: STOP is the cognitive-brake sibling to TIPP's body-brake.
 ```
 
-The body of the file (below the frontmatter) holds the full `practice` instructions in prose — the part a client renders when you land on the page.
+The body of the file (below the frontmatter) holds the full `practice` instructions in prose: the part a client renders when you land on the page.
 
 ### Authoring guardrail: 3–6 outbound edges per page
 
-Aim for **3 to 6 outgoing edges** on each page. This is a signal, not a hard limit:
+Aim for **3 to 6 outgoing edges** on each page; `build.py` fails outside this range. A count outside it is a signal:
 
-- **Fewer than 3** usually means the page is *orphaned* — we're missing pointers, or it isn't well connected into the web.
-- **More than 6** usually means the page *isn't atomic* — it's doing too much and should probably be split into smaller pages.
+- **Fewer than 3** usually means the page is *orphaned*: we're missing pointers, or it isn't well connected into the web.
+- **More than 6** usually means the page *isn't atomic*: it's doing too much and should probably be split into smaller pages.
 
 Entry ramps and hub pages are allowed to exceed this deliberately.
 
@@ -61,7 +61,7 @@ Entry ramps and hub pages are allowed to exceed this deliberately.
 | `to`        | target page id                                                 |
 | `relation`  | typed semantics of the pointer (see vocabulary below)          |
 | `condition` | optional guard, natural language, e.g. "if urge to act on it"  |
-| `note`      | **required** — why this pointer exists (for editing + for the crawler's why) |
+| `note`      | **required**: why this pointer exists (for editing + for the crawler's why) |
 
 `note` is mandatory on every edge. Best practice from typed-link systems: briefly say *why* two pages connect, and pick the relation that is *most true*, not the most generic. This is what stops every pointer from collapsing into `pairs_with`.
 
@@ -83,17 +83,17 @@ Entry ramps and hub pages are allowed to exceed this deliberately.
 
 Not a single start node. Several ways you actually arrive at the web:
 
-- **felt state** — "panicking", "numb", "resentful"
-- **situation** — "conflict with a person", "urge to act on impulse"
-- **goal** — "I want to ask for something", "I want to tolerate this moment"
+- **felt state:** "panicking", "numb", "resentful"
+- **situation:** "conflict with a person", "urge to act on impulse"
+- **goal:** "I want to ask for something", "I want to tolerate this moment"
 
 Each ramp lists edges into the relevant pages. See `ramps.yaml`.
 
 ## Backlinks (reverse index)
 
-Edges are stored *on the originating page* so authoring stays local — when you edit a page you see its outgoing pointers. The cost is that "what points *at* TIPP?" would require scanning every file.
+Edges are stored *on the originating page* so authoring stays local: when you edit a page you see its outgoing pointers. The cost is that "what points *at* TIPP?" would require scanning every file.
 
-We resolve this with a **build step** — `python build.py` (no dependencies) — run whenever pages change. It reads all pages and emits a derived `backlinks.json` mapping each page id to its incoming edges. Authors never hand-maintain it. The crawler and any future client can then traverse in both directions cheaply. Pages remain the single source of truth; the reverse index is generated, never edited.
+We resolve this with a **build step**, `python build.py` (no dependencies), run whenever pages change. It reads all pages and emits a derived `backlinks.json` mapping each page id to its incoming edges. Authors never hand-maintain it. The crawler and any future client can then traverse in both directions cheaply. Pages remain the single source of truth; the reverse index is generated, never edited.
 
 `build.py` also validates the graph and exits non-zero on any error: an edge target that resolves to no page, a page outside the 3–6 edge guardrail, or a `ramps.yaml` target that resolves to no page. `python build.py --check` validates without writing and also fails if `backlinks.json` is stale; CI runs it on every push.
 

@@ -7,8 +7,8 @@ source_url: https://dialecticalbehaviortherapy.com/mindfulness/wise-mind/
 type: concept
 category: integration
 summary: >
-  The state between emotional mind and reasonable mind — where you honor your feelings and
-  the facts at once — used to reach decisions that hold up over time.
+  The state between emotional mind and reasonable mind (where you honor your feelings and
+  the facts at once) used to reach decisions that hold up over time.
 tags: [mindfulness, wise-mind, decision-making, integration, values, capstone]
 when_to_use: >
   When facing a decision or problem and you're pulled toward acting purely on feeling or
@@ -33,10 +33,10 @@ Wise Mind, a concept from Marsha Linehan, sits between **emotional mind** (decid
 1. **Settle** with abdominal breathing, a hand on the belly, watching the breath.
 2. **Bring up a problem** that's been bothering you and let the central issue surface.
 3. **Access wise mind (~5 min):**
-   - **Gather information** — facts, pros and cons, likely consequences.
-   - **Identify your emotions** — name feelings, fears, and gut instincts without judgment.
-   - **Reflect on values and goals** — how do the options fit your priorities?
-   - **Mindful awareness** — stay present and curious about your inner state.
+   - **Gather information:** facts, pros and cons, likely consequences.
+   - **Identify your emotions:** name feelings, fears, and gut instincts without judgment.
+   - **Reflect on values and goals:** how do the options fit your priorities?
+   - **Mindful awareness:** stay present and curious about your inner state.
    - **Integrate** the rational and emotional: what does logic say, what do emotions say, where do they align or conflict?
    - **Take time**, and **stay flexible** as new information arrives.
 

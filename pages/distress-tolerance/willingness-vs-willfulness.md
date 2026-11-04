@@ -8,13 +8,13 @@ type: skill
 category: reality-acceptance
 summary: >
   Notice when you're willfully fighting an unchangeable reality, and deliberately
-  shift to willingness — open, flexible, effective engagement with what is.
+  shift to willingness; open, flexible, effective engagement with what is.
 tags: [acceptance, flexibility, effectiveness, problem-solving]
 when_to_use: >
   When you catch yourself expending energy resisting facts you can't change, or
   refusing coping skills out of stubbornness or a need for control.
 when_not_to_use: >
-  Willingness is not passivity — it's doing what's needed, no more and no less;
+  Willingness is not passivity: it's doing what's needed, no more and no less;
   it doesn't mean accepting genuine mistreatment.
 edges:
   - to: distress-tolerance/radical-acceptance
@@ -30,12 +30,12 @@ edges:
 
 Two stances toward a hard situation:
 
-- **Willfulness** — rigid resistance: fighting reality, refusing new approaches, insisting your way is the only valid one. It burns energy in vain and usually makes things worse.
-- **Willingness** — openness: accepting reality, engaging fully, doing what the situation actually needs.
+- **Willfulness:** rigid resistance: fighting reality, refusing new approaches, insisting your way is the only valid one. It burns energy in vain and usually makes things worse.
+- **Willingness:** openness: accepting reality, engaging fully, doing what the situation actually needs.
 
 **Practice (three steps):**
 
-1. **Describe the situation** in facts only — what happened, when, who, the problem — no feelings or interpretations.
+1. **Describe the situation** in facts only (what happened, when, who, the problem), no feelings or interpretations.
 2. **How are you being willful?** Name the resistant thoughts, emotions, sensations, and what they make you want to do.
 3. **What are you willing to do?** If you accepted the facts, what would you feel, and what flexible, effective options open up?
 

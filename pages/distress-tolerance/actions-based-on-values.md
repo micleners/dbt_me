@@ -14,7 +14,7 @@ when_to_use: >
   Out of crisis, to build the sense of purpose that makes future distress more
   bearable and reduces how often crises hit.
 when_not_to_use: >
-  Not an in-the-moment rescue for acute overwhelm — settle the crisis first, then
+  Not an in-the-moment rescue for acute overwhelm; settle the crisis first, then
   do the longer-term work here.
 edges:
   - to: distress-tolerance/tipp
@@ -33,7 +33,7 @@ Purpose is a buffer against distress. This skill turns vague values into schedul
 **Practice (three steps):**
 
 1. **Pick your top three values** from areas like relationships, family, work, friends, education, spirituality, health, community, parenting, recreation.
-2. **Clarify why each matters** — the specific reasons it's meaningful to you.
-3. **Define concrete actions** — exact, realistic, time-bound (e.g. "Monday, I'll spend 20 minutes searching for a class"), not vague goals.
+2. **Clarify why each matters:** the specific reasons it's meaningful to you.
+3. **Define concrete actions:** exact, realistic, time-bound (e.g. "Monday, I'll spend 20 minutes searching for a class"), not vague goals.
 
-If motivation is low, start small — realistic actions build momentum and break the cycle of avoidance. See the source page for the worked "Emily" example.
+If motivation is low, start small: realistic actions build momentum and break the cycle of avoidance. See the source page for the worked "Emily" example.

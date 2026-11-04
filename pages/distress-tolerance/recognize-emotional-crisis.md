@@ -14,7 +14,7 @@ when_to_use: >
   Practice proactively (when calm) to map your own crisis pattern; then, in the
   moment, use that awareness the instant you notice the warning signs starting.
 when_not_to_use: >
-  This is an awareness skill, not a rescue skill — once you are already in full
+  This is an awareness skill, not a rescue skill; once you are already in full
   crisis, move to an in-the-moment survival skill.
 edges:
   - to: distress-tolerance/tipp
@@ -38,8 +38,8 @@ The gateway skill of the module: you cannot interrupt a crisis you do not notice
 
 **Practice (three times over a week, reflecting on a recent crisis):**
 
-1. **Recall your last crisis** — a moment of intense, overwhelming negative emotion where you felt unable to cope.
-2. **Name the emotions, thoughts, and behaviors** — what you felt, the exact words you thought, and what you did (or wanted to do) before and during it.
-3. **Name the sensations, environment, and triggers** — the bodily signs (racing pulse, flushed face), what was happening around you, and the specific trigger that caused the internal "snap."
+1. **Recall your last crisis:** a moment of intense, overwhelming negative emotion where you felt unable to cope.
+2. **Name the emotions, thoughts, and behaviors:** what you felt, the exact words you thought, and what you did (or wanted to do) before and during it.
+3. **Name the sensations, environment, and triggers:** the bodily signs (racing pulse, flushed face), what was happening around you, and the specific trigger that caused the internal "snap."
 
 The payoff is pattern recognition: these aspects tend to repeat across similar situations, so once mapped, you can spot the next crisis early enough to deploy a survival skill. See the source page for the full worksheet and examples.

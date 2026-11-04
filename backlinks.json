@@ -8,12 +8,12 @@
     {
       "from": "distress-tolerance/resistt",
       "relation": "alternative_to",
-      "note": "Both are multi-tool distraction toolkits for surviving the moment \u2014 learn both, choose one per situation."
+      "note": "Both are multi-tool distraction toolkits for surviving the moment; learn both, choose one per situation."
     },
     {
       "from": "distress-tolerance/tipp",
       "relation": "alternative_to",
-      "note": "ACCEPTS resets the mind by distraction where TIPP resets the body \u2014 choose by whether the crisis feels somatic or cognitive."
+      "note": "ACCEPTS resets the mind by distraction where TIPP resets the body; choose by whether the crisis feels somatic or cognitive."
     },
     {
       "from": "distress-tolerance/urge-surfing",
@@ -96,7 +96,7 @@
     {
       "from": "distress-tolerance/self-soothing",
       "relation": "alternative_to",
-      "note": "Both work through the senses \u2014 grounding reorients to the present, self-soothing adds comforting sensory input."
+      "note": "Both work through the senses; grounding reorients to the present, self-soothing adds comforting sensory input."
     }
   ],
   "distress-tolerance/half-smile": [
@@ -174,7 +174,7 @@
     {
       "from": "distress-tolerance/accepts",
       "relation": "alternative_to",
-      "note": "Both are multi-tool distraction toolkits for surviving the moment \u2014 pick one per situation."
+      "note": "Both are multi-tool distraction toolkits for surviving the moment; pick one per situation."
     },
     {
       "from": "distress-tolerance/distracting-activities",
@@ -196,7 +196,7 @@
     {
       "from": "distress-tolerance/grounding",
       "relation": "alternative_to",
-      "note": "Both calm through the senses \u2014 grounding reorients to present reality, self-soothing adds pleasant sensory comfort."
+      "note": "Both calm through the senses; grounding reorients to present reality, self-soothing adds pleasant sensory comfort."
     }
   ],
   "distress-tolerance/tipp": [
@@ -208,12 +208,12 @@
     {
       "from": "distress-tolerance/cost-benefit-analysis",
       "relation": "contrasts_with",
-      "note": "TIPP is fast and in-the-moment; this is slow and deliberative \u2014 choose by whether you are calm enough to think."
+      "note": "TIPP is fast and in-the-moment; this is slow and deliberative; choose by whether you are calm enough to think."
     },
     {
       "from": "distress-tolerance/grounding",
       "relation": "alternative_to",
-      "note": "Grounding reorients attention without the physiological jolt of TIPP \u2014 a gentler route when the body isn't in full alarm."
+      "note": "Grounding reorients attention without the physiological jolt of TIPP; a gentler route when the body isn't in full alarm."
     },
     {
       "from": "distress-tolerance/recognize-emotional-crisis",
@@ -223,7 +223,7 @@
     {
       "from": "distress-tolerance/self-soothing",
       "relation": "contrasts_with",
-      "note": "TIPP jolts the body to down-regulate fast; self-soothing gently comforts \u2014 choose by how intense the arousal is."
+      "note": "TIPP jolts the body to down-regulate fast; self-soothing gently comforts; choose by how intense the arousal is."
     },
     {
       "from": "distress-tolerance/urge-surfing",
@@ -240,7 +240,7 @@
     {
       "from": "distress-tolerance/accepts",
       "relation": "contrasts_with",
-      "note": "ACCEPTS distracts away from the wave; urge surfing rides it \u2014 opposite mechanisms for the same urge."
+      "note": "ACCEPTS distracts away from the wave; urge surfing rides it; opposite mechanisms for the same urge."
     },
     {
       "from": "distress-tolerance/cost-benefit-analysis",
@@ -250,7 +250,7 @@
     {
       "from": "distress-tolerance/distracting-activities",
       "relation": "contrasts_with",
-      "note": "Distraction moves attention away from the urge; urge surfing stays with it \u2014 opposite strategies for the same urge."
+      "note": "Distraction moves attention away from the urge; urge surfing stays with it; opposite strategies for the same urge."
     },
     {
       "from": "distress-tolerance/half-smile",
@@ -260,7 +260,7 @@
     {
       "from": "distress-tolerance/resistt",
       "relation": "contrasts_with",
-      "note": "RESISTT manages the urge by shifting away from it; urge surfing sits with it \u2014 opposite mechanisms."
+      "note": "RESISTT manages the urge by shifting away from it; urge surfing sits with it; opposite mechanisms."
     },
     {
       "from": "emotion-regulation/emotion-exposure",
@@ -754,7 +754,7 @@
     {
       "from": "mindfulness/mindfulness-of-negative-judgments",
       "relation": "pairs_with",
-      "note": "Tracks the emotion each judgment produces \u2014 the same emotion-clarity skill from M4."
+      "note": "Tracks the emotion each judgment produces; the same emotion-clarity skill from M4."
     },
     {
       "from": "mindfulness/wise-mind",
@@ -771,7 +771,7 @@
     {
       "from": "mindfulness/mental-body-scan",
       "relation": "pairs_with",
-      "note": "Scanning the body is internal-event awareness \u2014 the inward half M3 balances against external focus."
+      "note": "Scanning the body is internal-event awareness; the inward half M3 balances against external focus."
     },
     {
       "from": "mindfulness/observing",
@@ -793,12 +793,12 @@
     {
       "from": "mindfulness/mindfulness-of-negative-judgments",
       "relation": "prerequisite_of",
-      "note": "You must first catch automatic judgments before Letting Go can reframe them \u2014 this is the pair's first half."
+      "note": "You must first catch automatic judgments before Letting Go can reframe them; this is the pair's first half."
     },
     {
       "from": "mindfulness/thought-defusion",
       "relation": "pairs_with",
-      "note": "Both create distance from sticky thoughts \u2014 defusion by imagery, Letting Go by reframing a judgment."
+      "note": "Both create distance from sticky thoughts; defusion by imagery, Letting Go by reframing a judgment."
     }
   ],
   "mindfulness/mental-body-scan": [
@@ -842,7 +842,7 @@
     {
       "from": "mindfulness/thought-defusion",
       "relation": "builds_on",
-      "note": "Extends mental noting \u2014 after noting a thought, imagery lets it drift away, loosening its hold."
+      "note": "Extends mental noting; after noting a thought, imagery lets it drift away, loosening its hold."
     }
   ],
   "mindfulness/mindful-breathing": [
@@ -859,7 +859,7 @@
     {
       "from": "mindfulness/observing",
       "relation": "pairs_with",
-      "note": "The breath is a portable object of observation \u2014 use it when no object is at hand."
+      "note": "The breath is a portable object of observation; use it when no object is at hand."
     },
     {
       "from": "mindfulness/thought-defusion",
@@ -903,12 +903,12 @@
     {
       "from": "mindfulness/internal-vs-external-events",
       "relation": "builds_on",
-      "note": "Applies the observing stance to two arenas at once \u2014 inner experience and the outer environment."
+      "note": "Applies the observing stance to two arenas at once; inner experience and the outer environment."
     },
     {
       "from": "mindfulness/letting-go",
       "relation": "pairs_with",
-      "note": "Rewrite judgments as if observing the situation from outside \u2014 the objective stance from Observing."
+      "note": "Rewrite judgments as if observing the situation from outside; the objective stance from Observing."
     },
     {
       "from": "mindfulness/mental-body-scan",
@@ -923,7 +923,7 @@
     {
       "from": "mindfulness/mindful-breathing",
       "relation": "builds_on",
-      "note": "Observing applied to the breath \u2014 a single, always-available object of attention."
+      "note": "Observing applied to the breath; a single, always-available object of attention."
     }
   ],
   "mindfulness/thought-defusion": [
@@ -935,7 +935,7 @@
     {
       "from": "mindfulness/letting-go",
       "relation": "alternative_to",
-      "note": "Another way to loosen a sticky judgment \u2014 defusion drifts it away, Letting Go rewrites it."
+      "note": "Another way to loosen a sticky judgment; defusion drifts it away, Letting Go rewrites it."
     },
     {
       "from": "mindfulness/mental-noting",

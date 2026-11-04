@@ -33,9 +33,9 @@ edges:
 
 The thinking mind churns out thoughts all day, many automatically negative, which feed anxiety and disconnection. Mental noting makes you aware of them so you're less caught up. Keep a light attitude; write down the first thing that comes, then the next.
 
-**Level 1 — Noting thoughts (5 min, beginners).** Tune into your thoughts and label each plainly: *"I am thinking about how my day went," "I am thinking about my dog."* Describe, don't control or analyze; move to the next thought.
+**Level 1: Noting thoughts (5 min, beginners).** Tune into your thoughts and label each plainly: *"I am thinking about how my day went," "I am thinking about my dog."* Describe, don't control or analyze; move to the next thought.
 
-**Level 2 — Noting experiences (10 min, intermediate).** Widen to thoughts, emotions, sensations, and events, using forms like *"I feel the emotion Y,"* *"When I think about X, the emotion Y occurs,"* *"When event X happens, I feel Y and my thoughts are Z."*
+**Level 2: Noting experiences (10 min, intermediate).** Widen to thoughts, emotions, sensations, and events, using forms like *"I feel the emotion Y,"* *"When I think about X, the emotion Y occurs,"* *"When event X happens, I feel Y and my thoughts are Z."*
 
 The shift is from analyzing to describing:
 - *Instead of* "I can't believe how depressed I feel!" → *"I can notice sadness inside me. I also feel unmotivated and tired."*

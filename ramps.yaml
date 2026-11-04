@@ -1,4 +1,4 @@
-# Entry ramps — how you actually arrive at the web.
+# Entry ramps: how you actually arrive at the web.
 # Each ramp matches an opening ("what's going on") and points into the graph.
 # The crawler picks a ramp, then follows the pages' own typed edges from there.
 #
@@ -9,7 +9,7 @@ ramps:
   # ---------- FELT STATES ----------
   - id: ramp/panicking
     kind: felt-state
-    cue: "Panicking — racing heart, flushed, physically activated, can't think."
+    cue: "Panicking: racing heart, flushed, physically activated, can't think."
     edges:
       - to: distress-tolerance/tipp
         primary: true
@@ -37,7 +37,7 @@ ramps:
     edges:
       - to: distress-tolerance/urge-surfing
         primary: true
-        note: Ride the urge out — it peaks and fades if you don't act.
+        note: Ride the urge out; it peaks and fades if you don't act.
       - to: distress-tolerance/resistt
         note: If staying with it is too much, manage the urge with the RESISTT menu.
       - to: distress-tolerance/accepts
@@ -60,7 +60,7 @@ ramps:
     edges:
       - to: distress-tolerance/recognize-emotional-crisis
         primary: true
-        note: Gateway — confirm the warning signs, which then branch by what you're feeling.
+        note: Gateway; confirm the warning signs, which then branch by what you're feeling.
       - to: distress-tolerance/tipp
         note: If your body is already in alarm, down-regulate before you speak.
       - to: interpersonal-effectiveness/give
@@ -172,7 +172,7 @@ ramps:
     edges:
       - to: mindfulness/observing
         primary: true
-        note: Start with the foundational skill — observe one object, notice drift, return.
+        note: Start with the foundational skill; observe one object, notice drift, return.
       - to: mindfulness/mental-body-scan
         note: Extend the same attention to the body to relax and reconnect.
       - to: mindfulness/mindful-breathing

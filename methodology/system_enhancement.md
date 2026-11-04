@@ -8,27 +8,27 @@ scope: Cross-cutting decisions about the data model, graph, and clients.
 
 # System enhancements
 
-High-level strategies and structural improvements surfaced during the work, parked here to act on deliberately later rather than mid-task. Each is a decision or change to the *system* (the data model, the graph, the client architecture) — not a step in building any one module (that was `archive/module_fetch.md`).
+High-level strategies and structural improvements surfaced during the work, parked here to act on deliberately later rather than mid-task. Each is a decision or change to the *system* (the data model, the graph, the client architecture): not a step in building any one module (that was `archive/module_fetch.md`).
 
 Status legend: **open** (not started) · **planned** (has a trigger) · **done**.
 
-## 1. Add a `builds_on` relation — done
+## 1. Add a `builds_on` relation (done)
 
 **What:** Add `builds_on` to the relation vocabulary in `SCHEMA.md` as the reverse of `prerequisite_of`, so a skill can point back at the foundation it depends on.
 
-**Why:** Building Distress Tolerance exposed a gap — there is no way to say "Grounding *builds on* Observing" from Grounding's side. The only workaround was `pairs_with`, which understates a real dependency. Distress Tolerance already has 5 dangling cross-module edges into Mindfulness that want this direction.
+**Why:** Building Distress Tolerance exposed a gap: there is no way to say "Grounding *builds on* Observing" from Grounding's side. The only workaround was `pairs_with`, which understates a real dependency. Distress Tolerance already has 5 dangling cross-module edges into Mindfulness that want this direction.
 
 **Done:** in `SCHEMA.md`; used across modules.
 
-## 2. Watch for missing ramp categories — open
+## 2. Watch for missing ramp categories (open)
 
 **What:** Expand `ramps.yaml` as felt states surface that no ramp cleanly matches.
 
-**Why:** A real crawl ("lonely, insecure, rejected after a friend didn't answer") had no clean entry ramp — the closest was a goal ramp, which routed acceptably but not precisely. Loneliness / rejection / social hurt is a common enough entry state to deserve its own ramp.
+**Why:** A real crawl ("lonely, insecure, rejected after a friend didn't answer") had no clean entry ramp: the closest was a goal ramp, which routed acceptably but not precisely. Loneliness / rejection / social hurt is a common enough entry state to deserve its own ramp.
 
 **Trigger:** Ongoing. Every smoke-test crawl that lands on a poor ramp match is a candidate to log here and add.
 
-## 3. Decide the data-vs-delivery contract — open
+## 3. Decide the data-vs-delivery contract (open)
 
 **What:** Decide how much of the client's *delivery* is deterministic (rendered straight from page + edge `note`) vs. generated per-person (an LLM writing situation-specific, empathic wording on top of the graph).
 
@@ -36,13 +36,13 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 
 **Trigger:** When starting the web app / client work.
 
-## 4. Modeling note: the distraction-vs-acceptance axis — reference
+## 4. Modeling note: the distraction-vs-acceptance axis (reference)
 
-**What:** Not a change — a convention to reuse. The recurring tension between *distract away from* a feeling and *stay with / accept* it is well captured by `contrasts_with` (e.g. ACCEPTS / RESISTT vs. Urge Surfing).
+**What:** Not a change: a convention to reuse. The recurring tension between *distract away from* a feeling and *stay with / accept* it is well captured by `contrasts_with` (e.g. ACCEPTS / RESISTT vs. Urge Surfing).
 
 **Why:** Recording it so future modules model the same axis consistently instead of inventing new relations for it.
 
-## 5. Mindfulness "What"/"How" skills missing from the graph — open
+## 5. Mindfulness "What"/"How" skills missing from the graph (open)
 
 **What:** Participate and the three "How" skills (Nonjudgmentally, One-mindfully, Effectively) have no graph pages, though the flash card deck covers them.
 
@@ -50,7 +50,7 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 
 **Trigger:** Next session with network access to the source site. Procedure and findings: `methodology/investigations/mindfulness-what-how-skills.md`.
 
-## 6. Integrate deck flashcards into the graph — open
+## 6. Integrate deck flashcards into the graph (open)
 
 **What:** Give each deck card one action (supplement an existing page, new node, hub, or defer) and wire supplements in via a generated `supplements.json`.
 
@@ -58,7 +58,7 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 
 **Trigger:** After the What/How investigation (§5). Proposal and per-card dispositions: `methodology/deck_integration.md`.
 
-## 7. Edge cap vs. cross-module links — open
+## 7. Edge cap vs. cross-module links (open)
 
 **What:** Decide how the 3–6 outbound-edge guardrail treats cross-module links.
 
@@ -66,7 +66,7 @@ Status legend: **open** (not started) · **planned** (has a trigger) · **done**
 
 **Trigger:** Before the cross-module linking pass. Plan: `methodology/edge_cap.md`.
 
-## 8. Scenario run-throughs — open
+## 8. Scenario run-throughs (open)
 
 **What:** Use example scenarios to find dead ends and missing links in the graph.
 
